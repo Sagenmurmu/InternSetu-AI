@@ -1,0 +1,11 @@
+Dimension,Group,Average_Match_Score
+Rural/Urban,Rural,46.22
+Rural/Urban,Urban,45.14
+Category,General,44.53
+Category,OBC,46.19
+Category,EWS,45.88
+Category,SC,47.37
+Category,ST,46.41
+Gender,Female,46.29
+Gender,Male,45.04
+Gender,Other,47.18

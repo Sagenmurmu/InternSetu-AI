@@ -1,0 +1,101 @@
+internship_id,company_name,title,sector,required_skills,required_qualification,district,state,mode,capacity,selected_count
+1,Infosys,Database Administrator Intern,IT / Software,"[""AWS""]",Diploma,Pune,Maharashtra,On-site,5,0
+2,Tata Consultancy Services,Backend Developer Intern,IT / Software,"[""Git""]",B.Tech / B.E.,Bengaluru Urban,Karnataka,Remote,5,0
+3,ITC Limited,Frontend Engineer Intern,IT / Software,"[""HTML/CSS"", ""JavaScript""]",Diploma,Bhagalpur,Bihar,Remote,1,1
+4,ITC Limited,Database Administrator Intern,IT / Software,"[""JavaScript"", ""Git"", ""SQL"", ""HTML/CSS""]",M.Sc,Patna,Bihar,On-site,1,0
+5,Cognizant,Production line trainee,Manufacturing,"[""Data Analysis"", ""Communication"", ""Quality Control""]",Diploma,Simdega,Jharkhand,Remote,3,0
+6,Apollo Hospitals,Soil testing lab intern,Agriculture,"[""Research Methods"", ""Excel""]",Diploma,Kolar,Karnataka,Remote,1,0
+7,Wipro,Healthcare Operations Intern,Healthcare,"[""First Aid"", ""Record Keeping"", ""Communication"", ""Patient Care""]",Diploma,Kolar,Karnataka,On-site,5,3
+8,Fortis Healthcare,Inventory Management Trainee,Logistics / Supply Chain,"[""Logistics Planning"", ""Inventory Management""]",PhD,Pune,Maharashtra,Remote,1,0
+9,Apollo Hospitals,Public Policy Trainee,Government,"[""Report Writing"", ""Audit Checks"", ""Excel"", ""Communication""]",B.Tech / B.E.,Muzaffarpur,Bihar,On-site,5,3
+10,Mahendra & Mahendra,CAD Draftsman,Manufacturing,"[""Quality Control"", ""Data Analysis"", ""Communication""]",B.Tech / B.E.,Gaya,Bihar,Hybrid,3,0
+11,Apollo Hospitals,Agronomy Trainee,Agriculture,"[""Research Methods""]",B.Tech / B.E.,Faridabad,Haryana,Hybrid,3,0
+12,Wipro,Quality Assurance Assistant,Manufacturing,"[""Data Analysis"", ""CAD Drawing""]",B.Tech / B.E.,Bokaro,Jharkhand,Hybrid,2,0
+13,Fortis Healthcare,Clinical Lab Intern,Healthcare,"[""Record Keeping"", ""Patient Care"", ""First Aid""]",PhD,Thane,Maharashtra,Remote,2,0
+14,Reliance Retail,Warehouse Supervisor Trainee,Logistics / Supply Chain,"[""Data Analysis""]",B.Sc,Ranchi,Jharkhand,Remote,1,0
+15,Reliance Retail,Training Coordinator,Education,"[""Content Writing"", ""PowerPoint"", ""Teaching"", ""Communication""]",ITI,Hubli,Karnataka,Remote,4,0
+16,Flipkart,Database Administrator Intern,IT / Software,"[""JavaScript"", ""FastAPI"", ""Docker""]",B.Tech / B.E.,Ranchi,Jharkhand,Remote,4,0
+17,ITC Limited,Graphic Design Trainee,Media / Entertainment,"[""Figma""]",B.Com,Simdega,Jharkhand,On-site,5,5
+18,Reliance Retail,Investment Analyst Trainee,Finance / Banking,"[""Excel"", ""Data Analysis"", ""Tableau"", ""Financial Modeling""]",Diploma,Muzaffarpur,Bihar,Hybrid,3,0
+19,Byju's Learning,Accounting Trainee,Finance / Banking,"[""Financial Modeling""]",MBA,Pune,Maharashtra,Remote,1,0
+20,Apollo Hospitals,Full Stack Assistant,IT / Software,"[""AWS""]",Diploma,Bokaro,Jharkhand,Hybrid,4,4
+21,Reliance Retail,Logistics Analyst Intern,Logistics / Supply Chain,"[""SQL"", ""Data Analysis"", ""Logistics Planning""]",B.Tech / B.E.,Nuh,Haryana,On-site,2,0
+22,Cognizant,Content Writer,Media / Entertainment,"[""Figma""]",B.Tech / B.E.,Ranchi,Jharkhand,On-site,5,0
+23,L&T Engineering,Production line trainee,Manufacturing,"[""Quality Control"", ""Excel"", ""Communication""]",Diploma,Nagpur,Maharashtra,Hybrid,3,3
+24,HDFC Bank,Content Writer Intern,Education,"[""Teaching"", ""PowerPoint"", ""Communication""]",B.Tech / B.E.,Dhanbad,Jharkhand,On-site,2,0
+25,ITC Limited,Backend Developer Intern,IT / Software,"[""React"", ""SQL"", ""AWS""]",12th Pass,Bhagalpur,Bihar,On-site,5,0
+26,Infosys,Production line trainee,Manufacturing,"[""CAD Drawing"", ""Data Analysis""]",BBA / BMS,Nuh,Haryana,Remote,3,1
+27,Tata Motors,Nursing Assistant,Healthcare,"[""First Aid"", ""Communication"", ""Patient Care"", ""Record Keeping""]",BBA / BMS,Nashik,Maharashtra,Hybrid,1,1
+28,Mahendra & Mahendra,Administrative Analyst Assistant,Government,"[""Audit Checks""]",B.Com,Pune,Maharashtra,Hybrid,4,0
+29,Flipkart,Sales Trainee,Retail / E-commerce,"[""SEO"", ""Figma""]",12th Pass,Bengaluru Urban,Karnataka,Remote,1,0
+30,Federal Bank,Agro-forestry Trainee,Agriculture,"[""Data Analysis"", ""Research Methods"", ""Soil Testing""]",BBA / BMS,Ranchi,Jharkhand,Remote,5,0
+31,Mahendra & Mahendra,Public Policy Trainee,Government,"[""Excel"", ""Report Writing"", ""Audit Checks"", ""Communication""]",Diploma,Gaya,Bihar,On-site,3,0
+32,Infosys,Academic Coordinator Assistant,Education,"[""Content Writing"", ""Communication"", ""PowerPoint""]",B.Tech / B.E.,Bhagalpur,Bihar,On-site,4,3
+33,Apollo Hospitals,Supply Chain Coordinator Assistant,Logistics / Supply Chain,"[""Inventory Management"", ""SQL""]",Diploma,Patna,Bihar,On-site,4,0
+34,Byju's Learning,Finance Analyst Intern,Finance / Banking,"[""Excel"", ""Data Analysis"", ""SQL""]",B.Sc,Nashik,Maharashtra,Remote,2,0
+35,Reliance Retail,Video Editor Intern,Media / Entertainment,"[""Content Writing"", ""Communication""]",BBA / BMS,Muzaffarpur,Bihar,Remote,2,1
+36,Infosys,Administrative Analyst Assistant,Government,"[""Excel"", ""Communication""]",B.Tech / B.E.,Hubli,Karnataka,Remote,4,0
+37,Mahendra & Mahendra,Social Media Coordinator Assistant,Media / Entertainment,"[""Content Writing"", ""Photoshop"", ""Figma"", ""Video Editing""]",BBA / BMS,Panipat,Haryana,On-site,5,0
+38,ITC Limited,Video Editor Intern,Media / Entertainment,"[""Communication"", ""Figma"", ""Content Writing""]",Diploma,Pune,Maharashtra,Remote,4,0
+39,Tata Motors,Quality Assurance Assistant,Manufacturing,"[""Excel"", ""Data Analysis"", ""CAD Drawing"", ""Communication""]",B.Tech / B.E.,Bhagalpur,Bihar,Hybrid,5,1
+40,Federal Bank,Video Editor Intern,Media / Entertainment,"[""Communication"", ""Video Editing"", ""Content Writing"", ""Figma""]",B.Com,Nagpur,Maharashtra,Remote,4,0
+41,Federal Bank,Investment Analyst Trainee,Finance / Banking,"[""Power BI"", ""Financial Modeling"", ""Excel"", ""Tableau""]",B.Tech / B.E.,Hubli,Karnataka,On-site,2,0
+42,ITC Limited,Municipal Planning Intern,Government,"[""Report Writing"", ""Communication"", ""Audit Checks"", ""Excel""]",Diploma,Kolar,Karnataka,On-site,5,5
+43,L&T Engineering,Nursing Assistant,Healthcare,"[""First Aid"", ""Communication""]",12th Pass,Bokaro,Jharkhand,On-site,2,0
+44,Infosys,Warehouse Supervisor Trainee,Logistics / Supply Chain,"[""Logistics Planning"", ""Excel""]",B.Com,Bhagalpur,Bihar,On-site,2,0
+45,TechNova Solutions,Training Coordinator,Education,"[""Communication"", ""Teaching""]",ITI,Gaya,Bihar,On-site,5,1
+46,Tata Consultancy Services,Customer Relations Intern,Retail / E-commerce,"[""Excel"", ""SEO"", ""Communication""]",B.Tech / B.E.,Mumbai,Maharashtra,Remote,3,2
+47,Fortis Healthcare,Credit Risk Assistant,Finance / Banking,"[""SQL"", ""Data Analysis"", ""Excel""]",B.Tech / B.E.,Panipat,Haryana,Remote,4,1
+48,Federal Bank,Digital Marketing Intern,Retail / E-commerce,"[""Figma"", ""Sales Pitching""]",Diploma,Bhagalpur,Bihar,Remote,5,0
+49,Tata Motors,Production line trainee,Manufacturing,"[""CAD Drawing"", ""Quality Control""]",B.Tech / B.E.,Muzaffarpur,Bihar,On-site,1,0
+50,Federal Bank,Healthcare Operations Intern,Healthcare,"[""Record Keeping"", ""Patient Care"", ""First Aid""]",B.Tech / B.E.,Faridabad,Haryana,Remote,4,0
+51,Reliance Retail,Production line trainee,Manufacturing,"[""Data Analysis"", ""Quality Control""]",B.Sc,Mumbai,Maharashtra,On-site,3,3
+52,Tata Motors,Online Tutor Trainee,Education,"[""Teaching"", ""Communication""]",Diploma,Pune,Maharashtra,Hybrid,5,0
+53,HDFC Bank,Video Editor Intern,Media / Entertainment,"[""Content Writing"", ""Photoshop"", ""Figma"", ""Communication""]",Diploma,Latehar,Jharkhand,Remote,4,1
+54,Federal Bank,Video Editor Intern,Media / Entertainment,"[""Figma"", ""Video Editing"", ""Communication""]",Diploma,Nuh,Haryana,On-site,4,0
+55,Reliance Retail,Farm Management Trainee,Agriculture,"[""Research Methods"", ""Soil Testing"", ""Excel"", ""Data Analysis""]",Diploma,Muzaffarpur,Bihar,Hybrid,2,0
+56,Wipro,Accounting Trainee,Finance / Banking,"[""Tableau""]",ITI,Hubli,Karnataka,On-site,5,0
+57,Reliance Retail,Academic Coordinator Assistant,Education,"[""Content Writing"", ""PowerPoint"", ""Communication""]",B.Sc,Patna,Bihar,On-site,2,1
+58,Wipro,Frontend Engineer Intern,IT / Software,"[""MongoDB"", ""JavaScript"", ""AWS""]",B.Sc,Nashik,Maharashtra,On-site,4,0
+59,Byju's Learning,Video Editor Intern,Media / Entertainment,"[""Communication"", ""Photoshop"", ""Figma""]",BBA / BMS,Nuh,Haryana,Remote,5,5
+60,ITC Limited,Logistics Analyst Intern,Logistics / Supply Chain,"[""SQL"", ""Data Analysis"", ""Logistics Planning"", ""Inventory Management""]",B.Tech / B.E.,Kolar,Karnataka,On-site,4,0
+61,Fortis Healthcare,Sales Trainee,Retail / E-commerce,"[""SEO"", ""Figma"", ""Sales Pitching"", ""Communication""]",Diploma,Bokaro,Jharkhand,Hybrid,5,0
+62,Mahendra & Mahendra,Academic Coordinator Assistant,Education,"[""PowerPoint""]",B.Tech / B.E.,Bokaro,Jharkhand,On-site,2,0
+63,Byju's Learning,Video Editor Intern,Media / Entertainment,"[""Content Writing"", ""Communication"", ""Figma""]",B.Tech / B.E.,Mysuru,Karnataka,Remote,5,2
+64,Cognizant,Agronomy Trainee,Agriculture,"[""Soil Testing""]",ITI,Panipat,Haryana,Hybrid,2,2
+65,Cognizant,Agro-forestry Trainee,Agriculture,"[""Soil Testing"", ""Research Methods""]",M.Sc,Muzaffarpur,Bihar,Remote,2,1
+66,ITC Limited,Municipal Planning Intern,Government,"[""Report Writing"", ""Audit Checks"", ""Communication""]",B.Com,Faridabad,Haryana,Hybrid,4,0
+67,Mahendra & Mahendra,Farm Management Trainee,Agriculture,"[""Soil Testing"", ""Excel""]",BBA / BMS,Bhagalpur,Bihar,Hybrid,4,0
+68,Byju's Learning,Audit Trainee,Government,"[""Report Writing"", ""Excel""]",MBA,Kolar,Karnataka,Hybrid,4,0
+69,Flipkart,Database Administrator Intern,IT / Software,"[""JavaScript"", ""MongoDB""]",BBA / BMS,Kolar,Karnataka,On-site,3,0
+70,Federal Bank,CAD Draftsman,Manufacturing,"[""Quality Control"", ""Excel"", ""Communication"", ""CAD Drawing""]",MBA,Panipat,Haryana,Remote,3,1
+71,Fortis Healthcare,Mechanical Design Intern,Manufacturing,"[""Excel""]",B.Sc,Gaya,Bihar,Remote,1,0
+72,Fortis Healthcare,Accounting Trainee,Finance / Banking,"[""Data Analysis"", ""Financial Modeling""]",B.Tech / B.E.,Panipat,Haryana,Remote,4,0
+73,Byju's Learning,Warehouse Supervisor Trainee,Logistics / Supply Chain,"[""SQL"", ""Excel"", ""Data Analysis"", ""Logistics Planning""]",B.Tech / B.E.,Kolar,Karnataka,On-site,2,0
+74,L&T Engineering,Supply Chain Coordinator Assistant,Logistics / Supply Chain,"[""Data Analysis"", ""Inventory Management"", ""Logistics Planning""]",B.Tech / B.E.,Bhagalpur,Bihar,Remote,4,0
+75,Cognizant,Content Writer Intern,Education,"[""PowerPoint""]",10th Pass,Bhagalpur,Bihar,Hybrid,3,0
+76,L&T Engineering,Clinical Lab Intern,Healthcare,"[""Communication"", ""Patient Care""]",B.Sc,Faridabad,Haryana,On-site,3,0
+77,L&T Engineering,Finance Analyst Intern,Finance / Banking,"[""Data Analysis"", ""Financial Modeling""]",B.Sc,Nagpur,Maharashtra,On-site,3,2
+78,ITC Limited,Content Writer,Media / Entertainment,"[""Video Editing""]",B.Tech / B.E.,Mumbai,Maharashtra,On-site,2,2
+79,L&T Engineering,Quality Assurance Assistant,Manufacturing,"[""Communication"", ""Quality Control"", ""CAD Drawing"", ""Data Analysis""]",B.Tech / B.E.,Khunti,Jharkhand,Hybrid,3,0
+80,Byju's Learning,Full Stack Assistant,IT / Software,"[""AWS"", ""JavaScript""]",M.Tech / M.E.,Faridabad,Haryana,On-site,4,0
+81,Fortis Healthcare,Production line trainee,Manufacturing,"[""Excel"", ""Quality Control"", ""CAD Drawing"", ""Communication""]",Diploma,Ranchi,Jharkhand,Remote,3,0
+82,HDFC Bank,Public Policy Trainee,Government,"[""Excel"", ""Report Writing"", ""Communication""]",M.Tech / M.E.,Muzaffarpur,Bihar,Remote,4,1
+83,Infosys,Sales Trainee,Retail / E-commerce,"[""SEO""]",Diploma,Simdega,Jharkhand,Remote,2,0
+84,Mahendra & Mahendra,Clinical Lab Intern,Healthcare,"[""First Aid"", ""Communication""]",12th Pass,Gurugram,Haryana,Remote,2,0
+85,HDFC Bank,Credit Risk Assistant,Finance / Banking,"[""Data Analysis""]",B.Sc,Bengaluru Rural,Karnataka,Remote,2,0
+86,ITC Limited,Frontend Engineer Intern,IT / Software,"[""MongoDB"", ""HTML/CSS"", ""Git"", ""JavaScript""]",B.Sc,Patna,Bihar,On-site,2,1
+87,Cognizant,Video Editor Intern,Media / Entertainment,"[""Figma"", ""Content Writing"", ""Photoshop"", ""Video Editing""]",BBA / BMS,Simdega,Jharkhand,Remote,1,0
+88,Wipro,Credit Risk Assistant,Finance / Banking,"[""Tableau"", ""Power BI"", ""Financial Modeling""]",Diploma,Faridabad,Haryana,Remote,1,0
+89,Reliance Retail,Municipal Planning Intern,Government,"[""Report Writing""]",B.Tech / B.E.,Muzaffarpur,Bihar,On-site,3,3
+90,Byju's Learning,Mechanical Design Intern,Manufacturing,"[""Data Analysis"", ""Excel"", ""Communication""]",B.Tech / B.E.,Ranchi,Jharkhand,Hybrid,5,0
+91,Fortis Healthcare,Customer Relations Intern,Retail / E-commerce,"[""Excel"", ""Communication"", ""Sales Pitching""]",B.Tech / B.E.,Khunti,Jharkhand,On-site,2,0
+92,L&T Engineering,CAD Draftsman,Manufacturing,"[""Quality Control""]",B.Com,Gurugram,Haryana,Hybrid,3,0
+93,Cognizant,Sales Trainee,Retail / E-commerce,"[""Excel"", ""Communication"", ""Figma"", ""Sales Pitching""]",BBA / BMS,Gumla,Jharkhand,Remote,5,0
+94,Flipkart,E-commerce Operations Assistant,Retail / E-commerce,"[""Excel""]",B.Sc,Nagpur,Maharashtra,Remote,5,0
+95,ITC Limited,Social Media Coordinator Assistant,Media / Entertainment,"[""Communication"", ""Figma""]",B.Tech / B.E.,Muzaffarpur,Bihar,Remote,1,0
+96,Byju's Learning,Agro-forestry Trainee,Agriculture,"[""Excel""]",Diploma,Gumla,Jharkhand,Remote,2,1
+97,Cognizant,Digital Marketing Intern,Retail / E-commerce,"[""Communication"", ""SEO""]",B.Sc,Simdega,Jharkhand,On-site,2,0
+98,Tata Consultancy Services,Public Policy Trainee,Government,"[""Audit Checks"", ""Report Writing"", ""Communication"", ""Excel""]",BBA / BMS,Patna,Bihar,Remote,1,0
+99,Flipkart,Digital Marketing Intern,Retail / E-commerce,"[""Sales Pitching"", ""Excel"", ""Communication"", ""Figma""]",Diploma,Patna,Bihar,On-site,2,1
+100,Wipro,Agronomy Trainee,Agriculture,"[""Research Methods"", ""Soil Testing"", ""Excel""]",M.Tech / M.E.,Gurugram,Haryana,Remote,2,0

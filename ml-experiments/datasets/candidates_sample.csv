@@ -1,0 +1,501 @@
+candidate_id,name,gender,category,rural_or_urban,district,state,qualification,skills,sector_interest,location_preference,willing_to_relocate,past_participation
+1,Pooja Sharma,Female,General,Rural,Dhanbad,Jharkhand,B.Sc,"[""Git"", ""MongoDB""]",IT / Software,Dhanbad,True,True
+2,Priya Bose,Male,OBC,Rural,Kolar,Karnataka,B.Tech / B.E.,"[""Excel"", ""MongoDB""]",Retail / E-commerce,Mumbai,True,False
+3,Meera Verma,Male,General,Urban,Faridabad,Haryana,B.Com,"[""Docker"", ""FastAPI"", ""Node.js"", ""React"", ""Java""]",Logistics / Supply Chain,Mumbai,True,False
+4,Amit Prasad,Male,General,Rural,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""HTML/CSS"", ""Excel"", ""Figma"", ""Docker"", ""Data Analysis""]",Education,Bengaluru Rural,True,True
+5,Ritu Jha,Male,General,Urban,Gurugram,Haryana,B.Sc,"[""Machine Learning"", ""JavaScript""]",Retail / E-commerce,Pune,True,True
+6,Rohan Patel,Female,General,Urban,Gaya,Bihar,Diploma,"[""Docker"", ""Figma"", ""Communication""]",Logistics / Supply Chain,Pune,False,False
+7,Sanjay Gupta,Female,General,Rural,Gumla,Jharkhand,B.Tech / B.E.,"[""Figma"", ""React"", ""Node.js"", ""Docker"", ""Tableau""]",Agriculture,Mumbai,False,False
+8,Rahul Prasad,Female,OBC,Rural,Nagpur,Maharashtra,12th Pass,"[""Excel"", ""Tableau"", ""Python"", ""Communication"", ""Figma""]",Agriculture,Nagpur,False,True
+9,Rajesh Gupta,Male,General,Urban,Nuh,Haryana,B.Tech / B.E.,"[""Python"", ""FastAPI"", ""HTML/CSS"", ""Java"", ""Machine Learning""]",IT / Software,Bengaluru,False,False
+10,Anjali Pandey,Female,EWS,Rural,Bengaluru Urban,Karnataka,B.Sc,"[""Communication"", ""AWS"", ""MongoDB""]",Healthcare,Remote,True,False
+11,Asha Joshi,Other,OBC,Rural,Panipat,Haryana,12th Pass,"[""React"", ""C++"", ""Python""]",Logistics / Supply Chain,Remote,True,True
+12,Arjun Sinha,Female,General,Urban,Mumbai,Maharashtra,B.Tech / B.E.,"[""Power BI"", ""Data Analysis"", ""Docker"", ""SQL""]",Logistics / Supply Chain,Remote,True,False
+13,Suresh Patel,Male,OBC,Rural,Muzaffarpur,Bihar,BBA / BMS,"[""FastAPI"", ""JavaScript""]",Government,Mumbai,False,True
+14,Rajesh Patel,Female,General,Rural,Gaya,Bihar,BBA / BMS,"[""Tableau"", ""Docker""]",Manufacturing,Gaya,True,False
+15,Rahul Singh,Female,SC,Rural,Muzaffarpur,Bihar,Diploma,"[""JavaScript"", ""Excel"", ""Node.js"", ""Python"", ""Docker""]",Education,Pune,True,False
+16,Tanvi Gupta,Male,General,Rural,Nuh,Haryana,B.Sc,"[""JavaScript"", ""Git""]",Media / Entertainment,Remote,False,False
+17,Neha Choudhury,Male,General,Rural,Kolar,Karnataka,12th Pass,"[""Git"", ""JavaScript"", ""React""]",Government,Remote,True,False
+18,Manish Patel,Female,General,Rural,Mysuru,Karnataka,B.Tech / B.E.,"[""Python"", ""Tableau""]",Logistics / Supply Chain,Remote,False,True
+19,Kiran Choudhury,Male,ST,Urban,Mysuru,Karnataka,Diploma,"[""Docker"", ""Java"", ""AWS"", ""Python"", ""Git""]",Manufacturing,Bengaluru,True,False
+20,Sneha Reddy,Male,General,Rural,Nashik,Maharashtra,B.Tech / B.E.,"[""React"", ""MongoDB""]",Education,Nashik,True,False
+21,Manish Jha,Female,OBC,Rural,Ranchi,Jharkhand,12th Pass,"[""Docker"", ""JavaScript"", ""HTML/CSS""]",Logistics / Supply Chain,Remote,True,True
+22,Asha Sen,Female,SC,Urban,Pune,Maharashtra,B.Sc,"[""HTML/CSS"", ""Docker""]",Government,Remote,True,False
+23,Ritu Jha,Other,SC,Urban,Gumla,Jharkhand,B.Sc,"[""MongoDB"", ""Machine Learning"", ""Communication"", ""Excel""]",Manufacturing,Pune,False,False
+24,Sanjay Patel,Female,OBC,Rural,Bengaluru Urban,Karnataka,10th Pass,"[""Node.js"", ""C++"", ""Communication""]",Manufacturing,Mumbai,True,False
+25,Meera Sharma,Male,EWS,Rural,Mumbai,Maharashtra,12th Pass,"[""HTML/CSS"", ""C++"", ""MongoDB"", ""AWS"", ""FastAPI""]",Government,Remote,True,True
+26,Preeti Sharma,Female,SC,Urban,Mysuru,Karnataka,B.Tech / B.E.,"[""Figma"", ""C++"", ""FastAPI"", ""Java""]",Agriculture,Mumbai,True,False
+27,Deepak Bose,Male,OBC,Urban,Hubli,Karnataka,B.Tech / B.E.,"[""Docker"", ""Python"", ""Java"", ""Figma"", ""Data Analysis""]",Government,Remote,True,False
+28,Alok Mishra,Female,OBC,Urban,Bengaluru Rural,Karnataka,Diploma,"[""React"", ""Machine Learning"", ""Java"", ""Git""]",Healthcare,Bengaluru,True,True
+29,Yash Yadav,Female,General,Rural,Gurugram,Haryana,B.Sc,"[""Power BI"", ""Node.js"", ""Machine Learning"", ""SQL"", ""Python""]",Manufacturing,Pune,True,False
+30,Shweta Kumar,Female,ST,Rural,Kolar,Karnataka,B.Sc,"[""Tableau"", ""AWS"", ""MongoDB"", ""Figma""]",Finance / Banking,Pune,True,False
+31,Sunita Choudhury,Male,General,Rural,Pune,Maharashtra,Diploma,"[""Docker"", ""React"", ""SQL"", ""Figma""]",Healthcare,Pune,True,False
+32,Arjun Rao,Male,OBC,Rural,Kolar,Karnataka,B.Tech / B.E.,"[""Git"", ""Node.js""]",Media / Entertainment,Kolar,False,True
+33,Abhishek Rao,Female,OBC,Urban,Kolar,Karnataka,Diploma,"[""Power BI"", ""Python"", ""Node.js"", ""C++"", ""Docker""]",Finance / Banking,Pune,False,False
+34,Priya Joshi,Female,OBC,Rural,Gaya,Bihar,BBA / BMS,"[""JavaScript"", ""Communication"", ""Node.js""]",Retail / E-commerce,Bengaluru,True,False
+35,Abhishek Reddy,Female,SC,Rural,Simdega,Jharkhand,10th Pass,"[""HTML/CSS"", ""Machine Learning""]",Manufacturing,Simdega,True,False
+36,Rajesh Sharma,Female,General,Rural,Latehar,Jharkhand,MBA,"[""Communication"", ""HTML/CSS"", ""Excel"", ""FastAPI"", ""Docker""]",Education,Latehar,True,False
+37,Abhishek Joshi,Female,General,Rural,Bengaluru Rural,Karnataka,B.Sc,"[""Figma"", ""FastAPI"", ""JavaScript"", ""HTML/CSS""]",Agriculture,Pune,True,True
+38,Meera Sharma,Female,SC,Rural,Thane,Maharashtra,B.Sc,"[""Excel"", ""AWS"", ""Communication"", ""Power BI"", ""Tableau""]",Government,Remote,True,False
+39,Anjali Reddy,Female,General,Rural,Panipat,Haryana,Diploma,"[""C++"", ""Excel"", ""Power BI"", ""Data Analysis"", ""HTML/CSS""]",Education,Mumbai,True,False
+40,Sunita Bose,Male,ST,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Power BI"", ""Figma"", ""Tableau""]",IT / Software,Muzaffarpur,True,False
+41,Ritu Nair,Female,General,Rural,Thane,Maharashtra,PhD,"[""HTML/CSS"", ""Tableau"", ""Communication"", ""Java""]",Education,Bengaluru,True,True
+42,Pooja Bose,Other,OBC,Rural,Bhagalpur,Bihar,B.Sc,"[""FastAPI"", ""Data Analysis"", ""Java"", ""Machine Learning""]",Retail / E-commerce,Bengaluru,True,False
+43,Vikram Reddy,Male,General,Rural,Kolar,Karnataka,12th Pass,"[""Git"", ""Java""]",Media / Entertainment,Pune,True,True
+44,Neha Reddy,Female,OBC,Urban,Muzaffarpur,Bihar,12th Pass,"[""SQL"", ""Figma""]",Logistics / Supply Chain,Mumbai,True,True
+45,Suresh Yadav,Female,OBC,Urban,Muzaffarpur,Bihar,M.Tech / M.E.,"[""Git"", ""MongoDB"", ""Java"", ""JavaScript""]",Logistics / Supply Chain,Muzaffarpur,False,True
+46,Kiran Reddy,Female,General,Rural,Gumla,Jharkhand,10th Pass,"[""Figma"", ""Power BI"", ""Java"", ""JavaScript"", ""Machine Learning""]",Education,Mumbai,True,False
+47,Sanjay Reddy,Female,OBC,Urban,Kolar,Karnataka,12th Pass,"[""SQL"", ""Communication"", ""Figma""]",Manufacturing,Kolar,True,False
+48,Deepak Mishra,Male,OBC,Urban,Nashik,Maharashtra,B.Tech / B.E.,"[""React"", ""JavaScript"", ""MongoDB"", ""C++"", ""Communication""]",IT / Software,Nashik,True,False
+49,Priya Prasad,Female,OBC,Urban,Kolar,Karnataka,B.Tech / B.E.,"[""Communication"", ""Excel"", ""MongoDB"", ""Power BI"", ""React""]",Media / Entertainment,Mumbai,True,False
+50,Siddharth Jha,Male,OBC,Rural,Patna,Bihar,B.Tech / B.E.,"[""Communication"", ""C++"", ""FastAPI"", ""Node.js""]",Agriculture,Patna,True,False
+51,Suresh Kumar,Male,General,Urban,Patna,Bihar,Diploma,"[""Java"", ""Tableau"", ""Power BI""]",Manufacturing,Patna,False,False
+52,Ritu Sinha,Male,OBC,Rural,Gumla,Jharkhand,PhD,"[""Tableau"", ""FastAPI""]",Finance / Banking,Pune,False,True
+53,Sunita Rao,Female,EWS,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""React"", ""Communication"", ""MongoDB""]",Retail / E-commerce,Remote,True,True
+54,Asha Dubey,Female,OBC,Urban,Muzaffarpur,Bihar,Diploma,"[""Tableau"", ""C++"", ""Data Analysis"", ""Machine Learning"", ""Node.js""]",Healthcare,Pune,True,False
+55,Abhishek Joshi,Other,SC,Urban,Kolar,Karnataka,MBA,"[""AWS"", ""Git"", ""C++""]",Manufacturing,Pune,True,False
+56,Rahul Gupta,Male,OBC,Rural,Bhagalpur,Bihar,Diploma,"[""React"", ""C++"", ""Docker"", ""Node.js"", ""Git""]",Media / Entertainment,Remote,True,True
+57,Deepak Mehta,Female,OBC,Rural,Simdega,Jharkhand,ITI,"[""Python"", ""JavaScript"", ""C++"", ""Git""]",Education,Mumbai,True,True
+58,Suresh Dubey,Female,General,Rural,Panipat,Haryana,B.Tech / B.E.,"[""Power BI"", ""Git"", ""SQL""]",Healthcare,Pune,True,False
+59,Rahul Mishra,Female,OBC,Rural,Bhagalpur,Bihar,M.Sc,"[""MongoDB"", ""Communication"", ""Tableau"", ""Java""]",Healthcare,Pune,False,True
+60,Abhishek Dubey,Male,General,Urban,Bokaro,Jharkhand,B.Sc,"[""Python"", ""Git"", ""JavaScript"", ""Power BI""]",Education,Bengaluru,True,False
+61,Rajesh Yadav,Male,SC,Urban,Bengaluru Rural,Karnataka,M.Tech / M.E.,"[""Java"", ""Tableau""]",IT / Software,Remote,True,True
+62,Deepak Das,Female,General,Rural,Faridabad,Haryana,B.Tech / B.E.,"[""Excel"", ""Communication"", ""Power BI"", ""Java""]",Retail / E-commerce,Faridabad,True,True
+63,Sanjay Prasad,Female,EWS,Urban,Faridabad,Haryana,12th Pass,"[""Python"", ""Communication"", ""Docker"", ""FastAPI"", ""Tableau""]",Retail / E-commerce,Mumbai,True,False
+64,Jyoti Verma,Female,OBC,Urban,Faridabad,Haryana,M.Tech / M.E.,"[""React"", ""Tableau"", ""Java""]",Government,Faridabad,True,False
+65,Asha Pandey,Male,General,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Git"", ""SQL"", ""MongoDB"", ""FastAPI"", ""Power BI""]",Logistics / Supply Chain,Pune,False,True
+66,Jyoti Patel,Male,EWS,Urban,Dhanbad,Jharkhand,B.Tech / B.E.,"[""JavaScript"", ""Node.js"", ""Communication"", ""Data Analysis""]",Manufacturing,Pune,True,True
+67,Priya Kumar,Female,General,Rural,Gurugram,Haryana,12th Pass,"[""Git"", ""Data Analysis"", ""Machine Learning""]",Retail / E-commerce,Bengaluru,True,False
+68,Sunita Gupta,Other,OBC,Urban,Dhanbad,Jharkhand,BBA / BMS,"[""Python"", ""HTML/CSS"", ""Machine Learning""]",Logistics / Supply Chain,Mumbai,True,True
+69,Vikram Rao,Female,OBC,Rural,Nashik,Maharashtra,B.Tech / B.E.,"[""AWS"", ""Machine Learning"", ""JavaScript"", ""Figma"", ""Java""]",Media / Entertainment,Nashik,True,False
+70,Komal Rao,Female,OBC,Urban,Ranchi,Jharkhand,Diploma,"[""React"", ""SQL"", ""Communication""]",Logistics / Supply Chain,Remote,True,False
+71,Deepak Mishra,Female,OBC,Urban,Bokaro,Jharkhand,B.Sc,"[""MongoDB"", ""Tableau"", ""Machine Learning""]",Government,Mumbai,False,False
+72,Siddharth Das,Male,OBC,Rural,Kolar,Karnataka,12th Pass,"[""React"", ""MongoDB""]",Manufacturing,Mumbai,False,False
+73,Meera Prasad,Male,General,Urban,Patna,Bihar,MBA,"[""HTML/CSS"", ""FastAPI"", ""AWS"", ""Data Analysis""]",Finance / Banking,Pune,True,True
+74,Jyoti Verma,Female,OBC,Urban,Nuh,Haryana,B.Tech / B.E.,"[""Python"", ""Excel"", ""Communication"", ""Java""]",Retail / E-commerce,Mumbai,True,False
+75,Komal Singh,Male,OBC,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""C++"", ""Excel"", ""HTML/CSS"", ""Java"", ""Figma""]",Logistics / Supply Chain,Remote,True,True
+76,Aditya Yadav,Male,General,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Communication"", ""Data Analysis"", ""AWS"", ""FastAPI"", ""HTML/CSS""]",Government,Muzaffarpur,True,False
+77,Tanvi Choudhury,Female,General,Rural,Nuh,Haryana,10th Pass,"[""Data Analysis"", ""SQL"", ""Communication"", ""Java""]",Retail / E-commerce,Nuh,True,False
+78,Divya Gupta,Male,OBC,Rural,Mumbai,Maharashtra,B.Tech / B.E.,"[""MongoDB"", ""Python""]",Media / Entertainment,Mumbai,False,False
+79,Komal Sinha,Female,General,Rural,Pune,Maharashtra,B.Com,"[""HTML/CSS"", ""React"", ""MongoDB"", ""FastAPI"", ""Machine Learning""]",Government,Remote,True,True
+80,Asha Das,Male,SC,Rural,Latehar,Jharkhand,B.Tech / B.E.,"[""HTML/CSS"", ""SQL"", ""Machine Learning"", ""FastAPI""]",Finance / Banking,Mumbai,True,False
+81,Arjun Jha,Other,OBC,Rural,Panipat,Haryana,B.Sc,"[""C++"", ""SQL"", ""Tableau"", ""React""]",Media / Entertainment,Pune,True,False
+82,Neha Sen,Female,General,Rural,Khunti,Jharkhand,BBA / BMS,"[""React"", ""AWS""]",Government,Pune,True,False
+83,Amit Mishra,Female,OBC,Rural,Panipat,Haryana,B.Tech / B.E.,"[""Tableau"", ""FastAPI""]",Retail / E-commerce,Panipat,True,True
+84,Ritu Sinha,Male,OBC,Rural,Mysuru,Karnataka,B.Tech / B.E.,"[""Node.js"", ""MongoDB"", ""C++"", ""JavaScript""]",Retail / E-commerce,Mysuru,True,False
+85,Abhishek Nair,Male,SC,Urban,Gurugram,Haryana,Diploma,"[""HTML/CSS"", ""Java"", ""Node.js""]",Finance / Banking,Remote,True,True
+86,Abhishek Tiwari,Female,SC,Urban,Nuh,Haryana,B.Tech / B.E.,"[""AWS"", ""HTML/CSS"", ""Python"", ""Git"", ""Java""]",Finance / Banking,Bengaluru,True,False
+87,Rajesh Mehta,Other,General,Rural,Latehar,Jharkhand,B.Com,"[""C++"", ""SQL""]",Logistics / Supply Chain,Pune,True,True
+88,Aditya Mishra,Male,General,Urban,Bhagalpur,Bihar,B.Com,"[""Machine Learning"", ""Docker"", ""Figma"", ""Java"", ""Power BI""]",Healthcare,Mumbai,True,False
+89,Alok Mishra,Female,SC,Rural,Gaya,Bihar,B.Com,"[""Communication"", ""JavaScript"", ""Power BI""]",Retail / E-commerce,Remote,False,False
+90,Pooja Nair,Male,General,Rural,Gurugram,Haryana,BBA / BMS,"[""Machine Learning"", ""Tableau""]",Retail / E-commerce,Gurugram,True,False
+91,Jyoti Mehta,Male,General,Rural,Mumbai,Maharashtra,BBA / BMS,"[""SQL"", ""Figma"", ""JavaScript"", ""Java""]",Media / Entertainment,Bengaluru,True,False
+92,Rahul Singh,Male,General,Rural,Panipat,Haryana,12th Pass,"[""Machine Learning"", ""Java"", ""FastAPI"", ""JavaScript""]",Healthcare,Pune,True,False
+93,Arjun Verma,Female,OBC,Rural,Gurugram,Haryana,B.Sc,"[""MongoDB"", ""Python"", ""HTML/CSS"", ""Machine Learning""]",Logistics / Supply Chain,Pune,True,False
+94,Jyoti Singh,Other,OBC,Urban,Nuh,Haryana,B.Tech / B.E.,"[""JavaScript"", ""Node.js"", ""HTML/CSS"", ""Communication"", ""Python""]",Retail / E-commerce,Nuh,True,False
+95,Siddharth Dubey,Female,General,Rural,Faridabad,Haryana,B.Com,"[""Tableau"", ""Power BI"", ""Excel""]",Finance / Banking,Faridabad,True,False
+96,Amit Nair,Male,SC,Urban,Nagpur,Maharashtra,B.Tech / B.E.,"[""Communication"", ""JavaScript"", ""Data Analysis"", ""Java"", ""HTML/CSS""]",IT / Software,Mumbai,True,False
+97,Preeti Joshi,Female,ST,Rural,Kolar,Karnataka,B.Sc,"[""AWS"", ""Communication"", ""React"", ""MongoDB""]",Manufacturing,Pune,True,False
+98,Deepak Das,Male,General,Rural,Muzaffarpur,Bihar,ITI,"[""HTML/CSS"", ""Tableau"", ""JavaScript"", ""Figma"", ""MongoDB""]",Education,Muzaffarpur,True,False
+99,Jyoti Choudhury,Female,OBC,Urban,Hubli,Karnataka,B.Sc,"[""JavaScript"", ""SQL"", ""React"", ""Machine Learning"", ""HTML/CSS""]",Retail / E-commerce,Pune,False,True
+100,Sneha Prasad,Male,General,Rural,Latehar,Jharkhand,12th Pass,"[""Node.js"", ""C++"", ""Communication"", ""Machine Learning""]",Manufacturing,Latehar,True,False
+101,Abhishek Bose,Male,SC,Urban,Hubli,Karnataka,Diploma,"[""Data Analysis"", ""FastAPI"", ""SQL"", ""React"", ""Tableau""]",Finance / Banking,Pune,False,False
+102,Rohan Prasad,Male,General,Rural,Pune,Maharashtra,B.Sc,"[""HTML/CSS"", ""AWS"", ""Machine Learning""]",Manufacturing,Bengaluru,True,True
+103,Tanvi Sharma,Male,OBC,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""React"", ""Java""]",Government,Pune,True,False
+104,Arjun Gupta,Other,OBC,Rural,Faridabad,Haryana,12th Pass,"[""SQL"", ""MongoDB"", ""AWS""]",IT / Software,Faridabad,True,False
+105,Aditya Das,Female,General,Urban,Faridabad,Haryana,BBA / BMS,"[""Data Analysis"", ""Docker"", ""Communication"", ""SQL""]",Education,Remote,True,False
+106,Aditya Dubey,Female,General,Urban,Faridabad,Haryana,BBA / BMS,"[""Python"", ""React""]",IT / Software,Remote,True,True
+107,Suresh Yadav,Female,OBC,Urban,Nagpur,Maharashtra,B.Tech / B.E.,"[""Java"", ""Tableau"", ""React"", ""JavaScript"", ""Excel""]",Media / Entertainment,Pune,True,True
+108,Sneha Das,Female,General,Urban,Thane,Maharashtra,12th Pass,"[""AWS"", ""Docker"", ""FastAPI"", ""C++""]",Healthcare,Pune,True,False
+109,Sneha Verma,Male,ST,Urban,Gaya,Bihar,MBA,"[""C++"", ""Git"", ""Figma""]",Healthcare,Bengaluru,True,False
+110,Tanvi Nair,Male,General,Rural,Gaya,Bihar,Diploma,"[""JavaScript"", ""Figma"", ""Java"", ""Power BI""]",Logistics / Supply Chain,Pune,True,True
+111,Siddharth Rao,Male,General,Rural,Bhagalpur,Bihar,10th Pass,"[""Git"", ""Docker""]",Healthcare,Mumbai,True,True
+112,Alok Bose,Male,EWS,Urban,Gumla,Jharkhand,M.Sc,"[""HTML/CSS"", ""C++"", ""Docker"", ""Figma"", ""SQL""]",Healthcare,Remote,True,False
+113,Amit Kumar,Male,General,Rural,Gaya,Bihar,B.Tech / B.E.,"[""C++"", ""Figma"", ""Excel""]",Government,Remote,True,True
+114,Meera Choudhury,Female,OBC,Urban,Thane,Maharashtra,B.Com,"[""C++"", ""FastAPI"", ""MongoDB"", ""Java""]",IT / Software,Remote,True,False
+115,Sanjay Kumar,Female,General,Urban,Panipat,Haryana,12th Pass,"[""JavaScript"", ""Git"", ""FastAPI""]",Healthcare,Panipat,True,False
+116,Suresh Sinha,Male,OBC,Urban,Patna,Bihar,B.Sc,"[""Docker"", ""C++"", ""Power BI""]",Agriculture,Pune,True,True
+117,Meera Bose,Male,SC,Urban,Nashik,Maharashtra,B.Tech / B.E.,"[""Communication"", ""Docker"", ""Java""]",Healthcare,Mumbai,True,False
+118,Tanvi Das,Male,OBC,Urban,Nagpur,Maharashtra,12th Pass,"[""Node.js"", ""HTML/CSS"", ""SQL"", ""Java"", ""JavaScript""]",Education,Nagpur,True,False
+119,Manish Pandey,Male,SC,Rural,Faridabad,Haryana,12th Pass,"[""Machine Learning"", ""JavaScript"", ""AWS""]",Healthcare,Bengaluru,True,False
+120,Yash Verma,Female,General,Urban,Kolar,Karnataka,B.Sc,"[""Power BI"", ""Data Analysis"", ""Java"", ""C++"", ""Docker""]",IT / Software,Kolar,True,True
+121,Amit Jha,Male,SC,Urban,Bokaro,Jharkhand,B.Tech / B.E.,"[""Excel"", ""Java"", ""JavaScript"", ""Python"", ""Git""]",Logistics / Supply Chain,Remote,True,False
+122,Deepak Mishra,Other,OBC,Rural,Hubli,Karnataka,B.Tech / B.E.,"[""FastAPI"", ""C++"", ""Excel""]",Media / Entertainment,Mumbai,True,True
+123,Meera Nair,Female,SC,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Node.js"", ""FastAPI""]",Finance / Banking,Bengaluru,True,False
+124,Rahul Reddy,Male,OBC,Rural,Nagpur,Maharashtra,B.Tech / B.E.,"[""Communication"", ""HTML/CSS""]",Healthcare,Nagpur,True,False
+125,Aditya Joshi,Female,ST,Urban,Mumbai,Maharashtra,B.Tech / B.E.,"[""HTML/CSS"", ""Machine Learning"", ""Git"", ""SQL""]",Media / Entertainment,Bengaluru,True,False
+126,Jyoti Rao,Female,ST,Urban,Bengaluru Urban,Karnataka,B.Sc,"[""AWS"", ""Tableau""]",Agriculture,Mumbai,True,False
+127,Neha Bose,Female,General,Rural,Mysuru,Karnataka,BBA / BMS,"[""FastAPI"", ""Data Analysis"", ""Power BI"", ""React"", ""Tableau""]",IT / Software,Pune,True,False
+128,Neha Bose,Male,SC,Urban,Bhagalpur,Bihar,B.Com,"[""Git"", ""React"", ""JavaScript""]",Government,Mumbai,True,False
+129,Neha Singh,Other,OBC,Rural,Bengaluru Urban,Karnataka,B.Com,"[""HTML/CSS"", ""Node.js"", ""Tableau"", ""Git"", ""AWS""]",Manufacturing,Remote,True,False
+130,Pooja Jha,Other,General,Rural,Bengaluru Rural,Karnataka,B.Com,"[""Tableau"", ""Docker"", ""MongoDB"", ""Node.js""]",Healthcare,Bengaluru,True,True
+131,Rajesh Verma,Male,OBC,Urban,Gumla,Jharkhand,Diploma,"[""Figma"", ""JavaScript""]",Media / Entertainment,Remote,True,False
+132,Ritu Kumar,Male,General,Rural,Gumla,Jharkhand,B.Tech / B.E.,"[""Machine Learning"", ""Git"", ""C++"", ""Docker""]",Healthcare,Mumbai,False,False
+133,Sanjay Rao,Male,General,Urban,Kolar,Karnataka,B.Tech / B.E.,"[""HTML/CSS"", ""Node.js""]",Agriculture,Mumbai,True,False
+134,Asha Joshi,Male,OBC,Rural,Mysuru,Karnataka,BBA / BMS,"[""Tableau"", ""JavaScript"", ""Docker""]",Government,Pune,True,True
+135,Ritu Reddy,Male,OBC,Urban,Mumbai,Maharashtra,B.Tech / B.E.,"[""JavaScript"", ""Communication"", ""Node.js""]",Logistics / Supply Chain,Remote,True,True
+136,Kiran Pandey,Male,ST,Rural,Gumla,Jharkhand,MBA,"[""Power BI"", ""Machine Learning""]",Logistics / Supply Chain,Bengaluru,True,True
+137,Rohan Nair,Male,OBC,Rural,Nagpur,Maharashtra,B.Tech / B.E.,"[""Tableau"", ""FastAPI"", ""Power BI"", ""C++"", ""Data Analysis""]",Retail / E-commerce,Mumbai,True,False
+138,Sanjay Gupta,Male,OBC,Rural,Bhagalpur,Bihar,ITI,"[""Machine Learning"", ""Node.js"", ""Figma"", ""Power BI""]",Agriculture,Mumbai,True,False
+139,Tanvi Mishra,Male,SC,Rural,Panipat,Haryana,ITI,"[""AWS"", ""JavaScript""]",Manufacturing,Panipat,True,False
+140,Sanjay Singh,Female,General,Rural,Mumbai,Maharashtra,B.Tech / B.E.,"[""Power BI"", ""Python"", ""Git"", ""MongoDB"", ""Docker""]",IT / Software,Remote,True,False
+141,Deepak Sharma,Female,OBC,Rural,Bengaluru Rural,Karnataka,M.Tech / M.E.,"[""Machine Learning"", ""Data Analysis"", ""AWS""]",Education,Mumbai,True,False
+142,Jyoti Joshi,Male,General,Urban,Mumbai,Maharashtra,B.Sc,"[""React"", ""Node.js""]",Government,Pune,True,True
+143,Rahul Sinha,Male,OBC,Rural,Nashik,Maharashtra,M.Sc,"[""AWS"", ""JavaScript""]",Healthcare,Bengaluru,False,False
+144,Yash Reddy,Male,General,Urban,Nuh,Haryana,ITI,"[""Python"", ""Data Analysis"", ""SQL"", ""Node.js""]",Manufacturing,Mumbai,True,True
+145,Abhishek Prasad,Female,General,Urban,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""JavaScript"", ""FastAPI"", ""MongoDB"", ""Machine Learning""]",Manufacturing,Mumbai,True,False
+146,Komal Das,Male,General,Urban,Gaya,Bihar,B.Tech / B.E.,"[""MongoDB"", ""Excel"", ""Node.js"", ""React"", ""Java""]",Healthcare,Gaya,True,True
+147,Sneha Joshi,Male,General,Rural,Thane,Maharashtra,B.Tech / B.E.,"[""FastAPI"", ""SQL"", ""React"", ""Excel""]",Government,Pune,True,False
+148,Siddharth Sharma,Male,OBC,Rural,Thane,Maharashtra,10th Pass,"[""Node.js"", ""React"", ""Docker"", ""Machine Learning"", ""Excel""]",Government,Bengaluru,True,False
+149,Tanvi Gupta,Male,OBC,Rural,Patna,Bihar,B.Tech / B.E.,"[""Power BI"", ""Data Analysis"", ""Tableau""]",Manufacturing,Bengaluru,True,False
+150,Meera Yadav,Male,SC,Rural,Gaya,Bihar,Diploma,"[""Power BI"", ""C++"", ""Excel""]",Government,Mumbai,True,False
+151,Tanvi Dubey,Female,General,Rural,Bhagalpur,Bihar,12th Pass,"[""Git"", ""Docker"", ""Excel""]",Agriculture,Bhagalpur,False,False
+152,Kiran Mishra,Female,SC,Rural,Muzaffarpur,Bihar,12th Pass,"[""Machine Learning"", ""Communication"", ""SQL"", ""MongoDB""]",Government,Muzaffarpur,True,False
+153,Komal Bose,Female,ST,Urban,Nuh,Haryana,B.Com,"[""Docker"", ""React"", ""FastAPI"", ""Machine Learning""]",Retail / E-commerce,Bengaluru,True,True
+154,Komal Das,Other,OBC,Rural,Pune,Maharashtra,B.Tech / B.E.,"[""Tableau"", ""HTML/CSS"", ""Node.js""]",Media / Entertainment,Remote,True,True
+155,Priya Pandey,Male,OBC,Urban,Bokaro,Jharkhand,MBA,"[""HTML/CSS"", ""Java"", ""C++""]",Media / Entertainment,Bengaluru,True,False
+156,Siddharth Mishra,Female,OBC,Rural,Bokaro,Jharkhand,B.Sc,"[""C++"", ""FastAPI""]",Finance / Banking,Bengaluru,True,False
+157,Meera Bose,Male,OBC,Urban,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""Node.js"", ""Python"", ""Data Analysis"", ""Tableau"", ""MongoDB""]",Government,Bengaluru Urban,True,True
+158,Arjun Dubey,Male,ST,Rural,Pune,Maharashtra,B.Tech / B.E.,"[""Power BI"", ""AWS"", ""C++"", ""Node.js""]",Logistics / Supply Chain,Pune,True,False
+159,Shweta Yadav,Male,OBC,Urban,Nuh,Haryana,B.Sc,"[""FastAPI"", ""Machine Learning"", ""Java"", ""Figma""]",Finance / Banking,Mumbai,True,False
+160,Suresh Yadav,Male,General,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""Java"", ""SQL"", ""Excel"", ""C++"", ""Tableau""]",Logistics / Supply Chain,Gurugram,False,False
+161,Tanvi Gupta,Male,General,Rural,Muzaffarpur,Bihar,B.Sc,"[""Tableau"", ""Power BI"", ""Excel"", ""React"", ""Python""]",Healthcare,Mumbai,True,True
+162,Deepak Jha,Female,OBC,Urban,Patna,Bihar,B.Tech / B.E.,"[""Docker"", ""HTML/CSS"", ""Figma"", ""JavaScript""]",Media / Entertainment,Remote,True,False
+163,Ritu Nair,Female,General,Rural,Simdega,Jharkhand,BBA / BMS,"[""Machine Learning"", ""Data Analysis""]",Logistics / Supply Chain,Mumbai,False,False
+164,Preeti Jha,Female,SC,Urban,Latehar,Jharkhand,B.Tech / B.E.,"[""Figma"", ""Docker"", ""Excel"", ""C++""]",Education,Mumbai,True,False
+165,Siddharth Gupta,Other,SC,Urban,Pune,Maharashtra,B.Sc,"[""Machine Learning"", ""SQL"", ""C++""]",Healthcare,Pune,True,False
+166,Sunita Tiwari,Male,OBC,Urban,Simdega,Jharkhand,B.Tech / B.E.,"[""HTML/CSS"", ""Tableau"", ""Power BI"", ""C++""]",Logistics / Supply Chain,Simdega,False,False
+167,Anjali Mishra,Female,OBC,Urban,Panipat,Haryana,Diploma,"[""Data Analysis"", ""Power BI"", ""Communication"", ""C++"", ""Java""]",Retail / E-commerce,Remote,True,False
+168,Tanvi Das,Female,SC,Rural,Patna,Bihar,12th Pass,"[""Tableau"", ""Figma"", ""Python""]",Government,Bengaluru,False,False
+169,Asha Jha,Female,ST,Rural,Nagpur,Maharashtra,12th Pass,"[""JavaScript"", ""Node.js"", ""Java""]",Healthcare,Pune,True,False
+170,Rahul Patel,Male,General,Rural,Patna,Bihar,10th Pass,"[""FastAPI"", ""MongoDB"", ""SQL"", ""Power BI""]",Manufacturing,Bengaluru,True,False
+171,Siddharth Verma,Male,ST,Rural,Bengaluru Urban,Karnataka,12th Pass,"[""Figma"", ""Excel""]",Media / Entertainment,Mumbai,True,False
+172,Sneha Rao,Female,OBC,Rural,Gumla,Jharkhand,B.Com,"[""HTML/CSS"", ""MongoDB"", ""C++"", ""SQL"", ""Machine Learning""]",Education,Gumla,True,False
+173,Deepak Sinha,Male,SC,Urban,Hubli,Karnataka,B.Tech / B.E.,"[""Node.js"", ""Java"", ""JavaScript""]",Healthcare,Pune,True,True
+174,Arjun Choudhury,Female,General,Rural,Pune,Maharashtra,B.Tech / B.E.,"[""HTML/CSS"", ""Docker"", ""Excel"", ""Power BI"", ""React""]",IT / Software,Remote,True,True
+175,Amit Kumar,Female,General,Rural,Panipat,Haryana,B.Tech / B.E.,"[""React"", ""Docker"", ""Git"", ""SQL"", ""Communication""]",Manufacturing,Mumbai,True,False
+176,Sneha Bose,Male,OBC,Urban,Khunti,Jharkhand,B.Sc,"[""JavaScript"", ""Machine Learning"", ""React""]",Government,Khunti,True,False
+177,Asha Prasad,Female,OBC,Rural,Bengaluru Rural,Karnataka,ITI,"[""AWS"", ""Figma"", ""Communication"", ""Excel""]",Retail / E-commerce,Bengaluru,True,False
+178,Pooja Sharma,Male,OBC,Rural,Nashik,Maharashtra,B.Tech / B.E.,"[""Tableau"", ""AWS"", ""HTML/CSS"", ""JavaScript"", ""Power BI""]",Logistics / Supply Chain,Bengaluru,True,True
+179,Siddharth Dubey,Female,General,Urban,Ranchi,Jharkhand,BBA / BMS,"[""Machine Learning"", ""JavaScript""]",Media / Entertainment,Mumbai,True,True
+180,Amit Bose,Female,OBC,Urban,Mysuru,Karnataka,Diploma,"[""Communication"", ""React"", ""HTML/CSS"", ""FastAPI""]",Agriculture,Mysuru,True,False
+181,Amit Joshi,Male,OBC,Rural,Nagpur,Maharashtra,12th Pass,"[""Python"", ""HTML/CSS"", ""Data Analysis"", ""Java"", ""AWS""]",Logistics / Supply Chain,Bengaluru,True,False
+182,Tanvi Patel,Female,OBC,Urban,Bengaluru Rural,Karnataka,MBA,"[""Machine Learning"", ""Docker""]",Retail / E-commerce,Bengaluru Rural,False,True
+183,Abhishek Nair,Male,OBC,Rural,Patna,Bihar,M.Sc,"[""Communication"", ""React"", ""JavaScript""]",Healthcare,Remote,True,False
+184,Shweta Singh,Female,OBC,Urban,Patna,Bihar,B.Tech / B.E.,"[""MongoDB"", ""SQL""]",Healthcare,Mumbai,True,False
+185,Komal Sinha,Female,General,Rural,Bengaluru Rural,Karnataka,MBA,"[""Git"", ""FastAPI"", ""SQL""]",Manufacturing,Bengaluru,True,False
+186,Pooja Bose,Male,SC,Rural,Bhagalpur,Bihar,BBA / BMS,"[""Excel"", ""Java""]",Logistics / Supply Chain,Bhagalpur,True,False
+187,Sneha Singh,Female,EWS,Rural,Dhanbad,Jharkhand,Diploma,"[""Python"", ""Node.js"", ""Tableau""]",Agriculture,Remote,True,False
+188,Vikram Verma,Male,SC,Urban,Bengaluru Urban,Karnataka,B.Com,"[""React"", ""Git"", ""Communication"", ""Figma""]",IT / Software,Bengaluru Urban,True,False
+189,Vikram Singh,Female,SC,Rural,Simdega,Jharkhand,12th Pass,"[""Node.js"", ""Power BI"", ""Python"", ""Figma"", ""MongoDB""]",Finance / Banking,Mumbai,True,True
+190,Sunita Mishra,Female,General,Urban,Mysuru,Karnataka,B.Tech / B.E.,"[""JavaScript"", ""React"", ""Communication"", ""Node.js"", ""SQL""]",Government,Bengaluru,True,False
+191,Ritu Tiwari,Other,OBC,Rural,Bhagalpur,Bihar,B.Tech / B.E.,"[""HTML/CSS"", ""Git"", ""AWS"", ""C++"", ""Node.js""]",Education,Bengaluru,True,False
+192,Priya Reddy,Male,EWS,Rural,Gurugram,Haryana,M.Sc,"[""Machine Learning"", ""Figma""]",Education,Remote,False,False
+193,Neha Mehta,Female,EWS,Rural,Bengaluru Urban,Karnataka,Diploma,"[""HTML/CSS"", ""Git"", ""Python"", ""Figma""]",Logistics / Supply Chain,Remote,True,False
+194,Tanvi Bose,Male,OBC,Rural,Hubli,Karnataka,Diploma,"[""Python"", ""C++"", ""Data Analysis"", ""SQL"", ""Git""]",Finance / Banking,Mumbai,True,True
+195,Sneha Verma,Female,SC,Urban,Thane,Maharashtra,B.Tech / B.E.,"[""Java"", ""C++"", ""SQL"", ""Excel""]",Government,Pune,True,True
+196,Vijay Mehta,Female,SC,Rural,Pune,Maharashtra,ITI,"[""Git"", ""Node.js""]",Logistics / Supply Chain,Pune,True,False
+197,Sanjay Tiwari,Female,ST,Rural,Gumla,Jharkhand,Diploma,"[""Excel"", ""React"", ""C++"", ""Tableau""]",IT / Software,Mumbai,True,False
+198,Vijay Reddy,Female,OBC,Rural,Muzaffarpur,Bihar,MBA,"[""Power BI"", ""Node.js"", ""HTML/CSS"", ""Git"", ""FastAPI""]",Media / Entertainment,Remote,True,False
+199,Aditya Mishra,Male,SC,Rural,Nagpur,Maharashtra,MBA,"[""C++"", ""Excel""]",Government,Bengaluru,True,False
+200,Anjali Das,Female,OBC,Rural,Simdega,Jharkhand,MBA,"[""Figma"", ""MongoDB"", ""Excel""]",IT / Software,Simdega,True,False
+201,Suresh Sinha,Female,ST,Rural,Nagpur,Maharashtra,Diploma,"[""Node.js"", ""Git""]",Agriculture,Pune,True,False
+202,Preeti Singh,Male,OBC,Urban,Bengaluru Rural,Karnataka,10th Pass,"[""Java"", ""React"", ""Power BI""]",Manufacturing,Mumbai,True,False
+203,Manish Singh,Female,General,Rural,Bhagalpur,Bihar,ITI,"[""Communication"", ""Tableau""]",Media / Entertainment,Mumbai,True,True
+204,Neha Gupta,Female,OBC,Rural,Nashik,Maharashtra,B.Tech / B.E.,"[""Docker"", ""JavaScript"", ""Node.js""]",Agriculture,Pune,False,False
+205,Yash Dubey,Female,OBC,Rural,Latehar,Jharkhand,B.Tech / B.E.,"[""FastAPI"", ""Tableau"", ""Excel""]",Finance / Banking,Bengaluru,False,True
+206,Preeti Singh,Other,OBC,Urban,Hubli,Karnataka,Diploma,"[""React"", ""Node.js""]",Agriculture,Pune,True,False
+207,Shweta Sharma,Female,OBC,Rural,Patna,Bihar,B.Tech / B.E.,"[""Git"", ""Figma"", ""FastAPI""]",Manufacturing,Remote,True,False
+208,Vijay Rao,Male,OBC,Rural,Patna,Bihar,ITI,"[""SQL"", ""Node.js"", ""JavaScript"", ""Git"", ""C++""]",Healthcare,Patna,True,False
+209,Jyoti Sharma,Male,SC,Rural,Patna,Bihar,M.Sc,"[""SQL"", ""Java"", ""Tableau""]",Retail / E-commerce,Mumbai,True,False
+210,Anjali Patel,Male,ST,Rural,Bhagalpur,Bihar,B.Com,"[""React"", ""Java"", ""AWS""]",Government,Bengaluru,True,False
+211,Priya Jha,Male,SC,Urban,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""Data Analysis"", ""Communication"", ""HTML/CSS"", ""Tableau""]",Agriculture,Pune,True,True
+212,Priya Mehta,Male,OBC,Rural,Bhagalpur,Bihar,Diploma,"[""React"", ""Java"", ""Python"", ""Node.js""]",IT / Software,Bengaluru,False,False
+213,Kiran Mehta,Female,OBC,Rural,Patna,Bihar,BBA / BMS,"[""Power BI"", ""SQL""]",Finance / Banking,Remote,False,True
+214,Asha Sinha,Other,OBC,Rural,Bhagalpur,Bihar,B.Tech / B.E.,"[""Tableau"", ""Java"", ""AWS""]",Logistics / Supply Chain,Pune,True,True
+215,Jyoti Bose,Female,OBC,Rural,Simdega,Jharkhand,12th Pass,"[""C++"", ""Communication"", ""Git"", ""Java""]",Healthcare,Bengaluru,True,True
+216,Neha Yadav,Male,General,Rural,Dhanbad,Jharkhand,B.Tech / B.E.,"[""Communication"", ""MongoDB"", ""Node.js"", ""Docker""]",IT / Software,Remote,True,False
+217,Rajesh Das,Female,General,Rural,Bhagalpur,Bihar,B.Tech / B.E.,"[""Docker"", ""Excel"", ""Java""]",Manufacturing,Pune,True,True
+218,Divya Prasad,Female,OBC,Rural,Mysuru,Karnataka,B.Tech / B.E.,"[""HTML/CSS"", ""Communication"", ""Java"", ""Tableau""]",Manufacturing,Pune,True,False
+219,Arjun Pandey,Female,OBC,Urban,Bhagalpur,Bihar,B.Tech / B.E.,"[""SQL"", ""Data Analysis"", ""C++""]",Government,Remote,False,False
+220,Sneha Das,Female,General,Rural,Pune,Maharashtra,Diploma,"[""Python"", ""Tableau""]",Education,Bengaluru,True,True
+221,Aditya Pandey,Female,SC,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Node.js"", ""Python"", ""JavaScript"", ""Data Analysis"", ""HTML/CSS""]",IT / Software,Mumbai,True,False
+222,Priya Prasad,Male,OBC,Rural,Nagpur,Maharashtra,12th Pass,"[""AWS"", ""Git"", ""Java"", ""Excel"", ""React""]",IT / Software,Mumbai,False,False
+223,Meera Rao,Female,EWS,Rural,Bhagalpur,Bihar,B.Com,"[""Node.js"", ""Python"", ""Machine Learning""]",Healthcare,Bengaluru,True,True
+224,Aditya Verma,Male,OBC,Rural,Nashik,Maharashtra,B.Tech / B.E.,"[""FastAPI"", ""Python""]",IT / Software,Nashik,True,False
+225,Manish Pandey,Female,General,Urban,Khunti,Jharkhand,B.Tech / B.E.,"[""AWS"", ""Communication""]",Logistics / Supply Chain,Remote,True,False
+226,Siddharth Choudhury,Female,General,Rural,Simdega,Jharkhand,ITI,"[""Communication"", ""AWS"", ""Data Analysis""]",Retail / E-commerce,Pune,True,True
+227,Tanvi Patel,Female,OBC,Rural,Dhanbad,Jharkhand,12th Pass,"[""Git"", ""Power BI""]",Finance / Banking,Dhanbad,True,True
+228,Siddharth Reddy,Female,OBC,Urban,Thane,Maharashtra,12th Pass,"[""JavaScript"", ""Java"", ""HTML/CSS""]",Retail / E-commerce,Pune,True,True
+229,Amit Sharma,Female,OBC,Rural,Thane,Maharashtra,MBA,"[""React"", ""HTML/CSS"", ""C++"", ""Excel""]",Manufacturing,Pune,True,False
+230,Abhishek Sinha,Female,SC,Urban,Bengaluru Rural,Karnataka,12th Pass,"[""Excel"", ""FastAPI""]",Government,Remote,True,False
+231,Alok Jha,Female,SC,Urban,Kolar,Karnataka,M.Tech / M.E.,"[""MongoDB"", ""Tableau""]",IT / Software,Kolar,True,False
+232,Sanjay Prasad,Female,OBC,Urban,Nuh,Haryana,B.Tech / B.E.,"[""Power BI"", ""HTML/CSS"", ""Node.js""]",Finance / Banking,Remote,False,False
+233,Rahul Tiwari,Female,OBC,Rural,Gaya,Bihar,12th Pass,"[""C++"", ""Machine Learning"", ""Figma"", ""Communication"", ""JavaScript""]",Agriculture,Bengaluru,True,False
+234,Ritu Singh,Male,SC,Rural,Muzaffarpur,Bihar,Diploma,"[""Python"", ""FastAPI"", ""Node.js"", ""MongoDB"", ""JavaScript""]",Agriculture,Remote,True,True
+235,Asha Choudhury,Female,OBC,Rural,Nagpur,Maharashtra,B.Com,"[""Tableau"", ""C++"", ""Docker""]",Logistics / Supply Chain,Remote,True,False
+236,Alok Verma,Male,OBC,Rural,Nagpur,Maharashtra,B.Tech / B.E.,"[""FastAPI"", ""JavaScript"", ""Excel"", ""Power BI""]",Finance / Banking,Pune,True,False
+237,Rajesh Verma,Female,General,Rural,Mysuru,Karnataka,12th Pass,"[""JavaScript"", ""Git"", ""FastAPI"", ""Tableau"", ""AWS""]",Logistics / Supply Chain,Remote,True,False
+238,Neha Bose,Female,SC,Rural,Gurugram,Haryana,B.Sc,"[""SQL"", ""FastAPI"", ""Node.js""]",Logistics / Supply Chain,Remote,False,False
+239,Abhishek Rao,Other,ST,Urban,Thane,Maharashtra,MBA,"[""Tableau"", ""SQL"", ""Git"", ""MongoDB""]",Logistics / Supply Chain,Remote,True,False
+240,Rohan Sinha,Female,OBC,Rural,Hubli,Karnataka,B.Sc,"[""SQL"", ""Excel"", ""AWS"", ""C++""]",Manufacturing,Mumbai,True,False
+241,Suresh Prasad,Female,SC,Rural,Patna,Bihar,B.Tech / B.E.,"[""Node.js"", ""SQL""]",IT / Software,Patna,True,False
+242,Aditya Nair,Female,General,Rural,Pune,Maharashtra,B.Com,"[""HTML/CSS"", ""Tableau""]",Manufacturing,Remote,False,False
+243,Sanjay Tiwari,Female,General,Urban,Mumbai,Maharashtra,M.Tech / M.E.,"[""MongoDB"", ""C++"", ""Docker"", ""JavaScript"", ""Python""]",Education,Bengaluru,True,False
+244,Alok Mehta,Female,OBC,Urban,Gurugram,Haryana,B.Com,"[""Java"", ""Tableau"", ""Excel""]",Manufacturing,Bengaluru,False,False
+245,Pooja Joshi,Male,General,Rural,Hubli,Karnataka,BBA / BMS,"[""C++"", ""Tableau""]",Finance / Banking,Hubli,True,False
+246,Neha Tiwari,Female,OBC,Rural,Faridabad,Haryana,12th Pass,"[""AWS"", ""Machine Learning"", ""Excel"", ""Figma""]",Manufacturing,Remote,True,False
+247,Komal Singh,Male,ST,Urban,Nagpur,Maharashtra,Diploma,"[""Docker"", ""Python"", ""FastAPI"", ""HTML/CSS"", ""Tableau""]",Healthcare,Remote,False,True
+248,Amit Prasad,Female,General,Urban,Simdega,Jharkhand,Diploma,"[""Python"", ""AWS"", ""HTML/CSS"", ""Git""]",Agriculture,Pune,True,True
+249,Rajesh Das,Female,ST,Rural,Nuh,Haryana,B.Tech / B.E.,"[""Data Analysis"", ""MongoDB"", ""FastAPI""]",Healthcare,Remote,False,False
+250,Preeti Tiwari,Female,General,Urban,Simdega,Jharkhand,B.Sc,"[""React"", ""Figma""]",IT / Software,Bengaluru,True,False
+251,Sanjay Reddy,Male,OBC,Rural,Mumbai,Maharashtra,B.Tech / B.E.,"[""Docker"", ""Python""]",Logistics / Supply Chain,Mumbai,True,False
+252,Arjun Sen,Female,General,Urban,Nashik,Maharashtra,12th Pass,"[""Node.js"", ""Figma"", ""Python"", ""Power BI"", ""Excel""]",Agriculture,Bengaluru,True,False
+253,Deepak Tiwari,Male,OBC,Urban,Mumbai,Maharashtra,B.Tech / B.E.,"[""FastAPI"", ""JavaScript"", ""Python""]",Logistics / Supply Chain,Remote,True,False
+254,Anjali Nair,Male,OBC,Urban,Kolar,Karnataka,M.Tech / M.E.,"[""Excel"", ""Figma"", ""Machine Learning""]",Logistics / Supply Chain,Mumbai,True,True
+255,Neha Bose,Male,OBC,Rural,Khunti,Jharkhand,12th Pass,"[""C++"", ""HTML/CSS"", ""SQL"", ""Machine Learning"", ""FastAPI""]",Education,Remote,True,True
+256,Tanvi Mishra,Male,OBC,Urban,Hubli,Karnataka,B.Tech / B.E.,"[""MongoDB"", ""Excel"", ""Python"", ""C++""]",Healthcare,Bengaluru,True,False
+257,Sunita Sen,Male,OBC,Urban,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Power BI"", ""Docker"", ""FastAPI"", ""Excel""]",Logistics / Supply Chain,Muzaffarpur,False,False
+258,Vikram Bose,Male,OBC,Urban,Ranchi,Jharkhand,BBA / BMS,"[""Git"", ""Figma""]",Government,Remote,True,True
+259,Manish Bose,Female,OBC,Urban,Mysuru,Karnataka,B.Tech / B.E.,"[""SQL"", ""Tableau"", ""AWS"", ""Docker""]",Manufacturing,Pune,True,True
+260,Ritu Yadav,Female,SC,Rural,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""Power BI"", ""HTML/CSS"", ""JavaScript""]",Healthcare,Pune,True,True
+261,Sanjay Kumar,Female,OBC,Urban,Muzaffarpur,Bihar,M.Tech / M.E.,"[""JavaScript"", ""C++""]",Manufacturing,Remote,True,True
+262,Manish Dubey,Female,General,Urban,Nashik,Maharashtra,B.Sc,"[""AWS"", ""Communication""]",Government,Bengaluru,True,False
+263,Vijay Pandey,Female,ST,Rural,Kolar,Karnataka,ITI,"[""AWS"", ""Communication""]",Healthcare,Bengaluru,True,False
+264,Pooja Prasad,Male,SC,Urban,Muzaffarpur,Bihar,B.Tech / B.E.,"[""MongoDB"", ""Python"", ""Machine Learning""]",IT / Software,Bengaluru,True,True
+265,Amit Dubey,Male,General,Urban,Panipat,Haryana,B.Tech / B.E.,"[""Java"", ""React""]",Healthcare,Pune,True,False
+266,Yash Jha,Male,OBC,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""Excel"", ""C++"", ""Tableau"", ""React""]",Healthcare,Pune,True,True
+267,Rajesh Choudhury,Female,OBC,Rural,Hubli,Karnataka,12th Pass,"[""Figma"", ""JavaScript"", ""Docker"", ""AWS"", ""FastAPI""]",Manufacturing,Pune,True,False
+268,Rahul Prasad,Female,OBC,Rural,Dhanbad,Jharkhand,B.Tech / B.E.,"[""Power BI"", ""Node.js"", ""HTML/CSS""]",Logistics / Supply Chain,Remote,True,True
+269,Yash Mehta,Female,General,Rural,Panipat,Haryana,Diploma,"[""Python"", ""Git""]",Agriculture,Panipat,True,False
+270,Kiran Sinha,Female,OBC,Rural,Bhagalpur,Bihar,Diploma,"[""Git"", ""HTML/CSS"", ""Communication"", ""Node.js"", ""Data Analysis""]",Government,Remote,True,False
+271,Jyoti Bose,Female,General,Rural,Thane,Maharashtra,B.Sc,"[""Machine Learning"", ""Tableau""]",Finance / Banking,Thane,True,False
+272,Meera Bose,Female,OBC,Rural,Patna,Bihar,B.Com,"[""Power BI"", ""MongoDB"", ""React""]",Manufacturing,Mumbai,True,True
+273,Amit Joshi,Female,OBC,Urban,Nashik,Maharashtra,12th Pass,"[""Power BI"", ""Tableau"", ""Python""]",Healthcare,Remote,True,True
+274,Sanjay Yadav,Male,General,Rural,Gumla,Jharkhand,12th Pass,"[""Node.js"", ""HTML/CSS"", ""Figma"", ""Docker""]",Logistics / Supply Chain,Bengaluru,True,False
+275,Arjun Singh,Female,OBC,Rural,Faridabad,Haryana,Diploma,"[""Machine Learning"", ""Data Analysis"", ""Tableau"", ""Node.js""]",Logistics / Supply Chain,Faridabad,True,False
+276,Siddharth Bose,Male,General,Urban,Faridabad,Haryana,BBA / BMS,"[""Tableau"", ""Node.js"", ""Power BI"", ""Machine Learning""]",Retail / E-commerce,Pune,True,False
+277,Priya Pandey,Male,General,Urban,Bengaluru Urban,Karnataka,B.Com,"[""HTML/CSS"", ""AWS"", ""Docker"", ""Python"", ""Communication""]",Healthcare,Mumbai,True,False
+278,Meera Singh,Female,General,Rural,Hubli,Karnataka,Diploma,"[""Power BI"", ""Data Analysis"", ""Machine Learning""]",Healthcare,Mumbai,True,True
+279,Ritu Yadav,Male,SC,Rural,Dhanbad,Jharkhand,MBA,"[""Figma"", ""Python"", ""Docker"", ""JavaScript"", ""Power BI""]",Retail / E-commerce,Remote,True,False
+280,Sunita Pandey,Male,SC,Rural,Gaya,Bihar,B.Com,"[""JavaScript"", ""AWS"", ""MongoDB""]",Media / Entertainment,Remote,True,False
+281,Divya Mishra,Other,OBC,Rural,Ranchi,Jharkhand,B.Sc,"[""Git"", ""FastAPI"", ""C++"", ""HTML/CSS"", ""Communication""]",Finance / Banking,Remote,True,True
+282,Meera Sen,Male,OBC,Rural,Nagpur,Maharashtra,BBA / BMS,"[""Tableau"", ""Excel"", ""SQL"", ""Machine Learning""]",Manufacturing,Mumbai,False,False
+283,Abhishek Patel,Male,EWS,Rural,Gumla,Jharkhand,B.Tech / B.E.,"[""AWS"", ""Docker"", ""C++""]",Media / Entertainment,Mumbai,True,False
+284,Neha Joshi,Male,General,Rural,Thane,Maharashtra,BBA / BMS,"[""Tableau"", ""C++""]",Education,Mumbai,True,False
+285,Manish Sen,Male,General,Urban,Gurugram,Haryana,B.Tech / B.E.,"[""Java"", ""HTML/CSS"", ""C++""]",Agriculture,Pune,True,False
+286,Anjali Joshi,Female,OBC,Urban,Mysuru,Karnataka,B.Tech / B.E.,"[""React"", ""Figma"", ""Excel"", ""C++"", ""Machine Learning""]",Retail / E-commerce,Mumbai,True,False
+287,Komal Reddy,Female,SC,Urban,Panipat,Haryana,B.Tech / B.E.,"[""Python"", ""SQL"", ""Machine Learning""]",Education,Panipat,True,False
+288,Siddharth Singh,Female,OBC,Rural,Patna,Bihar,12th Pass,"[""React"", ""Node.js"", ""Java""]",Healthcare,Bengaluru,True,False
+289,Vikram Gupta,Female,General,Rural,Nagpur,Maharashtra,BBA / BMS,"[""Docker"", ""Communication"", ""Figma"", ""Tableau"", ""SQL""]",Agriculture,Bengaluru,True,False
+290,Preeti Choudhury,Female,OBC,Urban,Gaya,Bihar,B.Com,"[""Java"", ""HTML/CSS"", ""MongoDB"", ""Communication"", ""SQL""]",Education,Gaya,True,False
+291,Vikram Sen,Male,OBC,Urban,Muzaffarpur,Bihar,Diploma,"[""Java"", ""Machine Learning"", ""Python"", ""HTML/CSS"", ""Data Analysis""]",Government,Remote,True,True
+292,Abhishek Joshi,Male,General,Urban,Faridabad,Haryana,Diploma,"[""MongoDB"", ""Data Analysis"", ""React"", ""Excel""]",Finance / Banking,Mumbai,True,False
+293,Alok Reddy,Female,OBC,Rural,Bengaluru Rural,Karnataka,MBA,"[""Excel"", ""FastAPI""]",Education,Mumbai,True,False
+294,Rahul Mehta,Male,General,Rural,Bhagalpur,Bihar,B.Com,"[""HTML/CSS"", ""Tableau"", ""JavaScript"", ""C++"", ""React""]",Finance / Banking,Bhagalpur,True,False
+295,Yash Jha,Male,SC,Urban,Ranchi,Jharkhand,M.Sc,"[""Node.js"", ""Tableau"", ""Machine Learning""]",IT / Software,Bengaluru,True,False
+296,Kiran Pandey,Male,EWS,Urban,Bengaluru Rural,Karnataka,B.Sc,"[""Communication"", ""Power BI""]",Education,Bengaluru,True,True
+297,Kiran Verma,Male,OBC,Rural,Nashik,Maharashtra,12th Pass,"[""Python"", ""JavaScript"", ""Power BI""]",Logistics / Supply Chain,Bengaluru,True,True
+298,Aditya Pandey,Male,OBC,Urban,Ranchi,Jharkhand,B.Tech / B.E.,"[""Docker"", ""FastAPI"", ""SQL""]",Media / Entertainment,Bengaluru,True,False
+299,Vijay Mishra,Female,General,Rural,Mysuru,Karnataka,BBA / BMS,"[""Tableau"", ""Docker"", ""Java"", ""Power BI"", ""Data Analysis""]",Logistics / Supply Chain,Bengaluru,True,False
+300,Shweta Reddy,Female,OBC,Urban,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""Java"", ""Communication"", ""Docker"", ""HTML/CSS"", ""Tableau""]",IT / Software,Remote,True,True
+301,Priya Yadav,Female,SC,Rural,Dhanbad,Jharkhand,MBA,"[""Data Analysis"", ""AWS"", ""Power BI"", ""SQL"", ""Java""]",Retail / E-commerce,Pune,True,True
+302,Arjun Kumar,Female,General,Urban,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""JavaScript"", ""Git""]",Government,Pune,True,False
+303,Manish Kumar,Male,OBC,Rural,Kolar,Karnataka,M.Tech / M.E.,"[""Tableau"", ""JavaScript""]",Retail / E-commerce,Remote,True,False
+304,Jyoti Sinha,Male,OBC,Rural,Bokaro,Jharkhand,Diploma,"[""AWS"", ""FastAPI"", ""Git""]",Healthcare,Remote,True,True
+305,Ritu Dubey,Female,General,Urban,Patna,Bihar,B.Com,"[""Tableau"", ""MongoDB"", ""FastAPI"", ""Excel""]",Finance / Banking,Remote,True,False
+306,Aditya Bose,Other,OBC,Rural,Nashik,Maharashtra,PhD,"[""HTML/CSS"", ""MongoDB"", ""Git"", ""C++""]",Logistics / Supply Chain,Bengaluru,True,True
+307,Manish Sen,Other,OBC,Rural,Khunti,Jharkhand,B.Tech / B.E.,"[""Java"", ""Python"", ""Figma""]",Healthcare,Bengaluru,False,True
+308,Sunita Bose,Female,OBC,Rural,Ranchi,Jharkhand,B.Tech / B.E.,"[""SQL"", ""Communication"", ""HTML/CSS""]",Logistics / Supply Chain,Bengaluru,True,False
+309,Anjali Dubey,Male,ST,Urban,Thane,Maharashtra,ITI,"[""Figma"", ""Java""]",IT / Software,Remote,True,False
+310,Meera Sen,Female,OBC,Urban,Bokaro,Jharkhand,B.Com,"[""Node.js"", ""JavaScript""]",Education,Remote,True,False
+311,Sneha Das,Female,General,Rural,Muzaffarpur,Bihar,B.Com,"[""Machine Learning"", ""MongoDB""]",Education,Pune,True,False
+312,Yash Dubey,Female,OBC,Rural,Muzaffarpur,Bihar,B.Com,"[""SQL"", ""Power BI"", ""Docker""]",Healthcare,Pune,True,False
+313,Ritu Mehta,Male,SC,Rural,Nuh,Haryana,12th Pass,"[""MongoDB"", ""HTML/CSS"", ""Git"", ""Data Analysis"", ""C++""]",Retail / E-commerce,Remote,True,False
+314,Aditya Sen,Female,EWS,Rural,Kolar,Karnataka,10th Pass,"[""Data Analysis"", ""HTML/CSS"", ""SQL""]",Manufacturing,Kolar,True,True
+315,Sneha Nair,Male,OBC,Rural,Muzaffarpur,Bihar,10th Pass,"[""Docker"", ""Data Analysis"", ""Git""]",Agriculture,Remote,True,False
+316,Sneha Sinha,Female,General,Rural,Nuh,Haryana,Diploma,"[""Java"", ""Data Analysis""]",Logistics / Supply Chain,Mumbai,True,False
+317,Rahul Singh,Male,General,Urban,Mumbai,Maharashtra,10th Pass,"[""Machine Learning"", ""Node.js"", ""AWS"", ""FastAPI"", ""C++""]",Media / Entertainment,Remote,True,True
+318,Shweta Bose,Female,General,Rural,Faridabad,Haryana,Diploma,"[""Excel"", ""Python"", ""HTML/CSS"", ""Docker"", ""AWS""]",Education,Bengaluru,False,False
+319,Sunita Kumar,Female,ST,Urban,Latehar,Jharkhand,MBA,"[""SQL"", ""C++"", ""Node.js""]",Finance / Banking,Latehar,True,False
+320,Sanjay Rao,Male,General,Urban,Faridabad,Haryana,B.Tech / B.E.,"[""Data Analysis"", ""SQL"", ""Docker""]",Healthcare,Bengaluru,True,False
+321,Vikram Rao,Other,EWS,Rural,Gurugram,Haryana,Diploma,"[""Excel"", ""C++""]",Finance / Banking,Gurugram,True,False
+322,Suresh Rao,Male,OBC,Urban,Pune,Maharashtra,B.Com,"[""SQL"", ""Excel""]",IT / Software,Remote,True,False
+323,Sanjay Yadav,Male,OBC,Rural,Gaya,Bihar,B.Tech / B.E.,"[""HTML/CSS"", ""Excel"", ""Node.js"", ""Power BI"", ""AWS""]",Finance / Banking,Bengaluru,True,True
+324,Rahul Reddy,Other,General,Urban,Bengaluru Urban,Karnataka,12th Pass,"[""Figma"", ""Power BI"", ""C++"", ""Tableau"", ""Machine Learning""]",Government,Pune,True,False
+325,Abhishek Das,Male,ST,Rural,Nuh,Haryana,B.Tech / B.E.,"[""Tableau"", ""JavaScript"", ""Machine Learning"", ""AWS"", ""Node.js""]",IT / Software,Remote,True,False
+326,Neha Patel,Male,General,Rural,Thane,Maharashtra,ITI,"[""Figma"", ""JavaScript"", ""AWS"", ""SQL""]",Media / Entertainment,Pune,True,False
+327,Divya Dubey,Female,OBC,Rural,Bhagalpur,Bihar,B.Tech / B.E.,"[""Tableau"", ""Git"", ""Data Analysis""]",Media / Entertainment,Bhagalpur,True,False
+328,Aditya Sinha,Female,General,Urban,Mumbai,Maharashtra,B.Tech / B.E.,"[""AWS"", ""Excel"", ""Node.js"", ""Docker"", ""JavaScript""]",Finance / Banking,Mumbai,True,False
+329,Sneha Jha,Female,General,Urban,Bhagalpur,Bihar,Diploma,"[""Java"", ""Excel"", ""FastAPI"", ""SQL"", ""Data Analysis""]",IT / Software,Remote,True,True
+330,Tanvi Pandey,Female,General,Urban,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""Tableau"", ""MongoDB"", ""Figma"", ""React"", ""Python""]",Healthcare,Remote,True,False
+331,Kiran Kumar,Male,General,Rural,Bengaluru Rural,Karnataka,B.Sc,"[""C++"", ""React"", ""JavaScript"", ""FastAPI""]",Government,Bengaluru,True,True
+332,Divya Mishra,Female,General,Rural,Nagpur,Maharashtra,B.Tech / B.E.,"[""React"", ""MongoDB"", ""Docker"", ""Figma"", ""Java""]",Media / Entertainment,Bengaluru,True,False
+333,Meera Choudhury,Male,General,Rural,Ranchi,Jharkhand,B.Tech / B.E.,"[""Power BI"", ""Java""]",Government,Remote,False,True
+334,Vijay Gupta,Female,OBC,Urban,Muzaffarpur,Bihar,B.Com,"[""Java"", ""Data Analysis"", ""Python""]",Manufacturing,Muzaffarpur,True,False
+335,Kiran Yadav,Other,OBC,Rural,Gurugram,Haryana,10th Pass,"[""Java"", ""Communication"", ""React""]",Education,Mumbai,True,False
+336,Rahul Verma,Female,General,Urban,Nuh,Haryana,BBA / BMS,"[""C++"", ""Figma"", ""Power BI""]",Media / Entertainment,Nuh,True,False
+337,Shweta Bose,Female,OBC,Urban,Bokaro,Jharkhand,B.Tech / B.E.,"[""Docker"", ""Figma"", ""Python"", ""Data Analysis""]",Logistics / Supply Chain,Mumbai,True,False
+338,Vijay Singh,Other,General,Rural,Gaya,Bihar,B.Tech / B.E.,"[""Excel"", ""FastAPI"", ""Java"", ""C++"", ""JavaScript""]",Education,Pune,True,False
+339,Jyoti Mishra,Female,General,Rural,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""Data Analysis"", ""React""]",Media / Entertainment,Remote,True,False
+340,Sneha Patel,Male,OBC,Urban,Nagpur,Maharashtra,12th Pass,"[""AWS"", ""SQL""]",Healthcare,Nagpur,True,False
+341,Pooja Sharma,Male,General,Urban,Khunti,Jharkhand,B.Tech / B.E.,"[""FastAPI"", ""AWS""]",Education,Khunti,True,False
+342,Kiran Das,Male,General,Rural,Patna,Bihar,Diploma,"[""Communication"", ""FastAPI"", ""Python""]",Logistics / Supply Chain,Remote,True,True
+343,Vijay Bose,Male,General,Urban,Nashik,Maharashtra,Diploma,"[""Java"", ""C++""]",Agriculture,Pune,True,True
+344,Neha Verma,Male,General,Rural,Panipat,Haryana,B.Tech / B.E.,"[""C++"", ""Data Analysis"", ""Docker"", ""React""]",Media / Entertainment,Remote,True,False
+345,Shweta Verma,Male,OBC,Urban,Muzaffarpur,Bihar,Diploma,"[""SQL"", ""Communication"", ""HTML/CSS""]",Government,Bengaluru,True,False
+346,Rohan Mishra,Male,General,Rural,Muzaffarpur,Bihar,BBA / BMS,"[""HTML/CSS"", ""Git"", ""SQL"", ""AWS""]",Manufacturing,Pune,False,False
+347,Rohan Bose,Female,SC,Rural,Muzaffarpur,Bihar,Diploma,"[""Docker"", ""Excel"", ""Power BI""]",Government,Muzaffarpur,True,False
+348,Preeti Rao,Female,General,Urban,Bengaluru Rural,Karnataka,B.Sc,"[""FastAPI"", ""Git"", ""Tableau"", ""C++"", ""Figma""]",Media / Entertainment,Bengaluru,True,False
+349,Siddharth Prasad,Female,SC,Rural,Patna,Bihar,12th Pass,"[""Git"", ""Python"", ""SQL""]",Finance / Banking,Pune,True,False
+350,Alok Patel,Male,ST,Rural,Thane,Maharashtra,B.Sc,"[""React"", ""Git"", ""Python"", ""AWS""]",Government,Bengaluru,False,True
+351,Neha Sharma,Female,SC,Rural,Mumbai,Maharashtra,Diploma,"[""C++"", ""Node.js"", ""Git"", ""Docker"", ""MongoDB""]",Agriculture,Bengaluru,True,False
+352,Rajesh Bose,Male,ST,Urban,Mysuru,Karnataka,PhD,"[""SQL"", ""Python"", ""React""]",IT / Software,Bengaluru,True,False
+353,Preeti Gupta,Male,OBC,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""AWS"", ""MongoDB"", ""Docker"", ""Tableau"", ""Node.js""]",Retail / E-commerce,Bengaluru,True,False
+354,Tanvi Mehta,Female,General,Urban,Faridabad,Haryana,10th Pass,"[""Git"", ""Power BI""]",Retail / E-commerce,Faridabad,True,False
+355,Anjali Gupta,Female,OBC,Urban,Thane,Maharashtra,B.Tech / B.E.,"[""Machine Learning"", ""Power BI""]",Manufacturing,Remote,True,False
+356,Neha Das,Female,General,Rural,Bhagalpur,Bihar,B.Tech / B.E.,"[""Java"", ""Excel"", ""JavaScript"", ""Figma""]",Logistics / Supply Chain,Mumbai,True,False
+357,Aditya Dubey,Male,EWS,Urban,Nuh,Haryana,Diploma,"[""SQL"", ""AWS""]",Manufacturing,Mumbai,True,False
+358,Sunita Reddy,Male,General,Rural,Gurugram,Haryana,B.Sc,"[""Excel"", ""Communication"", ""Machine Learning"", ""Power BI""]",Finance / Banking,Remote,False,False
+359,Anjali Gupta,Female,SC,Urban,Muzaffarpur,Bihar,Diploma,"[""Excel"", ""Data Analysis"", ""HTML/CSS"", ""JavaScript"", ""Communication""]",Manufacturing,Muzaffarpur,True,False
+360,Asha Pandey,Female,SC,Rural,Muzaffarpur,Bihar,B.Tech / B.E.,"[""AWS"", ""MongoDB"", ""Python""]",Education,Pune,True,False
+361,Amit Verma,Female,OBC,Urban,Bhagalpur,Bihar,Diploma,"[""FastAPI"", ""Communication"", ""Node.js"", ""Tableau""]",Healthcare,Remote,True,False
+362,Divya Das,Female,OBC,Urban,Simdega,Jharkhand,12th Pass,"[""Tableau"", ""HTML/CSS""]",Healthcare,Mumbai,True,True
+363,Anjali Kumar,Female,OBC,Urban,Nuh,Haryana,B.Sc,"[""React"", ""SQL""]",Government,Remote,False,True
+364,Pooja Sinha,Male,General,Urban,Dhanbad,Jharkhand,B.Tech / B.E.,"[""MongoDB"", ""C++"", ""Communication"", ""Excel""]",Manufacturing,Mumbai,True,False
+365,Meera Kumar,Male,SC,Rural,Simdega,Jharkhand,M.Sc,"[""Figma"", ""Node.js"", ""Excel""]",Media / Entertainment,Simdega,True,False
+366,Kiran Yadav,Female,ST,Urban,Ranchi,Jharkhand,12th Pass,"[""Tableau"", ""Python"", ""Power BI"", ""SQL""]",IT / Software,Ranchi,True,True
+367,Meera Joshi,Female,OBC,Urban,Muzaffarpur,Bihar,B.Tech / B.E.,"[""Docker"", ""Machine Learning""]",IT / Software,Pune,False,False
+368,Yash Verma,Female,ST,Rural,Thane,Maharashtra,12th Pass,"[""HTML/CSS"", ""Docker""]",Retail / E-commerce,Thane,False,False
+369,Deepak Tiwari,Male,OBC,Urban,Mysuru,Karnataka,B.Sc,"[""HTML/CSS"", ""Power BI""]",Manufacturing,Pune,True,True
+370,Rajesh Sharma,Female,OBC,Rural,Bokaro,Jharkhand,B.Tech / B.E.,"[""Power BI"", ""Docker"", ""Tableau"", ""Python""]",IT / Software,Mumbai,True,False
+371,Amit Joshi,Male,SC,Urban,Gaya,Bihar,B.Sc,"[""React"", ""JavaScript"", ""SQL""]",Media / Entertainment,Gaya,True,False
+372,Amit Mehta,Female,General,Rural,Khunti,Jharkhand,B.Com,"[""Tableau"", ""Excel""]",Logistics / Supply Chain,Khunti,False,True
+373,Tanvi Yadav,Female,General,Urban,Bhagalpur,Bihar,B.Com,"[""C++"", ""FastAPI"", ""Docker"", ""SQL"", ""Figma""]",Healthcare,Bhagalpur,True,False
+374,Pooja Reddy,Male,OBC,Urban,Gurugram,Haryana,B.Tech / B.E.,"[""SQL"", ""FastAPI""]",Logistics / Supply Chain,Pune,True,True
+375,Tanvi Singh,Male,General,Rural,Faridabad,Haryana,B.Tech / B.E.,"[""SQL"", ""Data Analysis"", ""Figma"", ""Communication"", ""Tableau""]",Government,Bengaluru,False,False
+376,Amit Yadav,Male,OBC,Urban,Nagpur,Maharashtra,B.Tech / B.E.,"[""Data Analysis"", ""FastAPI"", ""AWS""]",Manufacturing,Remote,True,False
+377,Sanjay Mishra,Female,OBC,Rural,Bengaluru Rural,Karnataka,B.Com,"[""Power BI"", ""Excel"", ""Git"", ""JavaScript"", ""AWS""]",Retail / E-commerce,Mumbai,True,True
+378,Shweta Kumar,Male,General,Rural,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""React"", ""Machine Learning""]",Media / Entertainment,Remote,True,False
+379,Rohan Mehta,Female,General,Rural,Gaya,Bihar,B.Tech / B.E.,"[""React"", ""Power BI"", ""Git""]",IT / Software,Pune,True,False
+380,Shweta Jha,Male,General,Urban,Nagpur,Maharashtra,Diploma,"[""JavaScript"", ""Git"", ""Figma""]",Education,Bengaluru,True,False
+381,Suresh Jha,Female,General,Rural,Hubli,Karnataka,M.Tech / M.E.,"[""React"", ""MongoDB"", ""AWS""]",Media / Entertainment,Bengaluru,True,False
+382,Sunita Sharma,Female,OBC,Rural,Thane,Maharashtra,B.Tech / B.E.,"[""Git"", ""Python"", ""MongoDB""]",IT / Software,Thane,False,False
+383,Amit Rao,Female,OBC,Urban,Simdega,Jharkhand,B.Tech / B.E.,"[""Docker"", ""Python""]",Government,Bengaluru,True,True
+384,Anjali Sharma,Male,General,Urban,Nuh,Haryana,M.Sc,"[""SQL"", ""Node.js"", ""Excel"", ""HTML/CSS"", ""Tableau""]",IT / Software,Nuh,True,False
+385,Amit Nair,Male,General,Urban,Gurugram,Haryana,B.Com,"[""Figma"", ""C++""]",IT / Software,Remote,False,False
+386,Neha Verma,Male,OBC,Rural,Pune,Maharashtra,B.Tech / B.E.,"[""Docker"", ""Data Analysis""]",Finance / Banking,Mumbai,True,True
+387,Yash Dubey,Female,OBC,Urban,Mysuru,Karnataka,B.Tech / B.E.,"[""AWS"", ""MongoDB"", ""Communication"", ""JavaScript""]",Manufacturing,Mumbai,True,False
+388,Pooja Pandey,Female,OBC,Rural,Thane,Maharashtra,B.Tech / B.E.,"[""Data Analysis"", ""Tableau""]",Manufacturing,Thane,True,True
+389,Arjun Verma,Male,General,Rural,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""Java"", ""MongoDB""]",Agriculture,Bengaluru,True,False
+390,Priya Nair,Male,General,Urban,Faridabad,Haryana,B.Tech / B.E.,"[""C++"", ""Power BI"", ""AWS"", ""Tableau""]",Media / Entertainment,Mumbai,True,False
+391,Asha Jha,Female,General,Rural,Mumbai,Maharashtra,12th Pass,"[""Tableau"", ""Excel"", ""Git"", ""Java""]",Finance / Banking,Bengaluru,False,False
+392,Sneha Jha,Male,General,Rural,Kolar,Karnataka,Diploma,"[""Data Analysis"", ""Docker"", ""JavaScript""]",Retail / E-commerce,Mumbai,True,False
+393,Aditya Bose,Male,ST,Rural,Gaya,Bihar,MBA,"[""SQL"", ""Python"", ""Docker"", ""AWS""]",Retail / E-commerce,Mumbai,True,True
+394,Sneha Dubey,Female,ST,Rural,Dhanbad,Jharkhand,B.Tech / B.E.,"[""SQL"", ""Docker""]",Manufacturing,Mumbai,True,False
+395,Sanjay Mishra,Male,General,Urban,Hubli,Karnataka,B.Tech / B.E.,"[""Data Analysis"", ""Python"", ""React"", ""Tableau""]",Manufacturing,Remote,True,False
+396,Neha Prasad,Male,General,Urban,Thane,Maharashtra,B.Tech / B.E.,"[""HTML/CSS"", ""Figma"", ""Java"", ""Tableau""]",Agriculture,Thane,True,False
+397,Suresh Mishra,Male,SC,Urban,Muzaffarpur,Bihar,12th Pass,"[""SQL"", ""Data Analysis""]",Education,Pune,False,False
+398,Meera Singh,Female,OBC,Rural,Simdega,Jharkhand,B.Tech / B.E.,"[""MongoDB"", ""Excel"", ""Docker"", ""Tableau""]",Logistics / Supply Chain,Bengaluru,True,False
+399,Deepak Bose,Male,SC,Rural,Faridabad,Haryana,B.Tech / B.E.,"[""Machine Learning"", ""Python"", ""Git"", ""SQL"", ""Communication""]",Education,Pune,True,False
+400,Deepak Rao,Male,ST,Urban,Ranchi,Jharkhand,B.Com,"[""React"", ""HTML/CSS"", ""Power BI"", ""MongoDB"", ""Communication""]",Media / Entertainment,Ranchi,True,False
+401,Priya Reddy,Male,General,Rural,Mysuru,Karnataka,ITI,"[""HTML/CSS"", ""MongoDB"", ""Figma"", ""JavaScript""]",Education,Mumbai,True,False
+402,Rajesh Tiwari,Male,General,Urban,Faridabad,Haryana,BBA / BMS,"[""Communication"", ""HTML/CSS"", ""FastAPI"", ""Git""]",Finance / Banking,Faridabad,True,True
+403,Tanvi Rao,Male,ST,Rural,Hubli,Karnataka,Diploma,"[""Docker"", ""AWS"", ""Figma""]",Agriculture,Hubli,True,False
+404,Pooja Gupta,Female,OBC,Rural,Pune,Maharashtra,B.Com,"[""Excel"", ""Java"", ""Python"", ""FastAPI""]",Healthcare,Bengaluru,False,True
+405,Sanjay Nair,Male,General,Rural,Ranchi,Jharkhand,10th Pass,"[""MongoDB"", ""JavaScript"", ""Data Analysis"", ""FastAPI"", ""Git""]",Agriculture,Remote,True,True
+406,Manish Kumar,Male,OBC,Urban,Latehar,Jharkhand,Diploma,"[""Excel"", ""HTML/CSS"", ""Python""]",Manufacturing,Bengaluru,False,False
+407,Vijay Sen,Male,OBC,Urban,Hubli,Karnataka,B.Tech / B.E.,"[""Git"", ""Python""]",Agriculture,Bengaluru,True,False
+408,Aditya Bose,Male,OBC,Urban,Panipat,Haryana,B.Tech / B.E.,"[""Tableau"", ""FastAPI"", ""Excel""]",Retail / E-commerce,Pune,True,False
+409,Suresh Verma,Female,General,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""Java"", ""Docker"", ""JavaScript"", ""React""]",Retail / E-commerce,Pune,True,True
+410,Asha Prasad,Other,OBC,Rural,Thane,Maharashtra,ITI,"[""Power BI"", ""HTML/CSS""]",Finance / Banking,Thane,False,False
+411,Siddharth Joshi,Male,OBC,Rural,Kolar,Karnataka,B.Tech / B.E.,"[""Excel"", ""React""]",Retail / E-commerce,Bengaluru,True,False
+412,Komal Verma,Male,OBC,Rural,Faridabad,Haryana,B.Com,"[""HTML/CSS"", ""Power BI"", ""Node.js"", ""Git"", ""Communication""]",Finance / Banking,Pune,True,True
+413,Tanvi Mehta,Female,General,Rural,Bokaro,Jharkhand,12th Pass,"[""Excel"", ""Node.js""]",Logistics / Supply Chain,Mumbai,True,False
+414,Siddharth Singh,Female,OBC,Rural,Gaya,Bihar,Diploma,"[""Power BI"", ""AWS"", ""Communication"", ""C++"", ""Python""]",IT / Software,Pune,False,True
+415,Alok Das,Female,OBC,Rural,Hubli,Karnataka,B.Sc,"[""Excel"", ""Power BI"", ""MongoDB"", ""SQL""]",Education,Pune,True,True
+416,Tanvi Prasad,Female,OBC,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""Communication"", ""Power BI"", ""Node.js"", ""HTML/CSS"", ""Java""]",Retail / E-commerce,Gurugram,True,True
+417,Jyoti Sen,Female,OBC,Urban,Thane,Maharashtra,12th Pass,"[""HTML/CSS"", ""MongoDB"", ""Figma"", ""JavaScript""]",Healthcare,Bengaluru,True,False
+418,Anjali Sinha,Male,General,Rural,Latehar,Jharkhand,Diploma,"[""MongoDB"", ""Git"", ""AWS"", ""Figma"", ""Communication""]",IT / Software,Pune,True,False
+419,Abhishek Dubey,Male,OBC,Urban,Dhanbad,Jharkhand,B.Sc,"[""Power BI"", ""AWS"", ""C++"", ""Excel""]",Logistics / Supply Chain,Mumbai,True,False
+420,Tanvi Tiwari,Female,SC,Urban,Gurugram,Haryana,Diploma,"[""Java"", ""Git""]",Government,Bengaluru,True,False
+421,Siddharth Dubey,Male,General,Urban,Muzaffarpur,Bihar,Diploma,"[""Java"", ""AWS""]",Education,Pune,True,False
+422,Suresh Joshi,Male,OBC,Urban,Gurugram,Haryana,BBA / BMS,"[""Git"", ""Power BI"", ""Data Analysis""]",Media / Entertainment,Mumbai,False,False
+423,Preeti Dubey,Female,General,Rural,Gaya,Bihar,Diploma,"[""MongoDB"", ""Figma"", ""C++"", ""React""]",Healthcare,Pune,True,True
+424,Aditya Reddy,Female,General,Rural,Bengaluru Urban,Karnataka,10th Pass,"[""Tableau"", ""Power BI"", ""Docker"", ""MongoDB""]",Government,Bengaluru Urban,True,True
+425,Priya Reddy,Female,General,Rural,Dhanbad,Jharkhand,B.Tech / B.E.,"[""JavaScript"", ""React""]",Retail / E-commerce,Remote,True,True
+426,Suresh Sen,Female,ST,Rural,Bengaluru Urban,Karnataka,12th Pass,"[""AWS"", ""Git""]",Agriculture,Mumbai,True,True
+427,Pooja Das,Male,OBC,Rural,Kolar,Karnataka,Diploma,"[""Excel"", ""Data Analysis""]",Education,Pune,True,False
+428,Neha Pandey,Female,OBC,Rural,Panipat,Haryana,B.Tech / B.E.,"[""Communication"", ""SQL"", ""HTML/CSS""]",Media / Entertainment,Mumbai,False,True
+429,Amit Prasad,Female,General,Urban,Mysuru,Karnataka,B.Tech / B.E.,"[""HTML/CSS"", ""FastAPI"", ""Docker"", ""Machine Learning""]",Media / Entertainment,Pune,True,False
+430,Manish Nair,Male,SC,Rural,Bengaluru Urban,Karnataka,M.Tech / M.E.,"[""MongoDB"", ""JavaScript"", ""Communication"", ""React""]",Media / Entertainment,Pune,True,False
+431,Meera Sinha,Male,ST,Rural,Mysuru,Karnataka,B.Tech / B.E.,"[""MongoDB"", ""Docker"", ""C++"", ""Tableau""]",IT / Software,Mysuru,True,True
+432,Alok Tiwari,Male,OBC,Urban,Nashik,Maharashtra,12th Pass,"[""Machine Learning"", ""AWS"", ""SQL""]",Logistics / Supply Chain,Pune,True,False
+433,Yash Gupta,Male,OBC,Urban,Pune,Maharashtra,12th Pass,"[""Excel"", ""Node.js"", ""Git"", ""Machine Learning""]",IT / Software,Pune,False,False
+434,Sanjay Singh,Other,General,Urban,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""Figma"", ""Communication"", ""SQL"", ""React"", ""HTML/CSS""]",Finance / Banking,Remote,True,False
+435,Preeti Mishra,Female,OBC,Rural,Bengaluru Urban,Karnataka,MBA,"[""Java"", ""Power BI"", ""Node.js"", ""SQL""]",Government,Bengaluru,True,False
+436,Deepak Prasad,Male,General,Urban,Khunti,Jharkhand,M.Sc,"[""Figma"", ""Tableau"", ""Machine Learning""]",Retail / E-commerce,Remote,True,False
+437,Rahul Pandey,Male,General,Urban,Kolar,Karnataka,B.Sc,"[""React"", ""FastAPI"", ""Docker"", ""JavaScript""]",IT / Software,Mumbai,False,False
+438,Vijay Yadav,Female,EWS,Rural,Ranchi,Jharkhand,Diploma,"[""Java"", ""Node.js"", ""HTML/CSS"", ""SQL"", ""JavaScript""]",Logistics / Supply Chain,Bengaluru,True,False
+439,Meera Mishra,Male,General,Rural,Mysuru,Karnataka,12th Pass,"[""SQL"", ""Power BI""]",Education,Mumbai,False,True
+440,Manish Yadav,Female,ST,Rural,Gaya,Bihar,Diploma,"[""SQL"", ""Docker"", ""Tableau"", ""JavaScript"", ""Data Analysis""]",Finance / Banking,Gaya,True,True
+441,Manish Jha,Female,OBC,Urban,Patna,Bihar,B.Tech / B.E.,"[""Tableau"", ""Power BI"", ""FastAPI"", ""SQL"", ""Docker""]",Retail / E-commerce,Patna,True,True
+442,Aditya Choudhury,Female,OBC,Urban,Hubli,Karnataka,PhD,"[""AWS"", ""Git""]",Finance / Banking,Pune,False,True
+443,Tanvi Prasad,Male,General,Rural,Simdega,Jharkhand,B.Tech / B.E.,"[""C++"", ""SQL""]",IT / Software,Simdega,True,False
+444,Yash Mishra,Female,General,Urban,Mumbai,Maharashtra,B.Sc,"[""C++"", ""Git"", ""SQL"", ""Data Analysis"", ""JavaScript""]",Education,Mumbai,True,False
+445,Abhishek Singh,Male,General,Urban,Patna,Bihar,10th Pass,"[""Excel"", ""Node.js"", ""Git""]",Education,Bengaluru,True,False
+446,Preeti Nair,Female,OBC,Rural,Bokaro,Jharkhand,B.Tech / B.E.,"[""Power BI"", ""Tableau"", ""Node.js""]",Media / Entertainment,Mumbai,True,False
+447,Preeti Sen,Female,OBC,Rural,Latehar,Jharkhand,Diploma,"[""Machine Learning"", ""SQL"", ""Power BI"", ""AWS"", ""React""]",Education,Pune,True,False
+448,Yash Nair,Male,General,Urban,Hubli,Karnataka,B.Tech / B.E.,"[""Docker"", ""React""]",IT / Software,Remote,True,False
+449,Siddharth Mishra,Female,OBC,Rural,Nashik,Maharashtra,12th Pass,"[""FastAPI"", ""Tableau""]",Finance / Banking,Bengaluru,False,True
+450,Suresh Sinha,Male,OBC,Rural,Bhagalpur,Bihar,Diploma,"[""Data Analysis"", ""Excel"", ""React""]",Logistics / Supply Chain,Mumbai,False,True
+451,Priya Sharma,Male,General,Urban,Muzaffarpur,Bihar,BBA / BMS,"[""Java"", ""HTML/CSS"", ""Node.js"", ""Figma"", ""React""]",Finance / Banking,Bengaluru,True,True
+452,Priya Sinha,Other,SC,Rural,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""React"", ""Java"", ""Tableau""]",Finance / Banking,Pune,True,True
+453,Sneha Sinha,Male,OBC,Rural,Gaya,Bihar,Diploma,"[""JavaScript"", ""C++"", ""Python"", ""FastAPI"", ""MongoDB""]",Government,Pune,True,False
+454,Deepak Kumar,Male,OBC,Rural,Panipat,Haryana,Diploma,"[""AWS"", ""Python""]",Government,Remote,True,True
+455,Suresh Pandey,Male,OBC,Urban,Muzaffarpur,Bihar,10th Pass,"[""Data Analysis"", ""Power BI"", ""HTML/CSS"", ""Tableau""]",Healthcare,Remote,True,False
+456,Meera Yadav,Female,OBC,Rural,Thane,Maharashtra,MBA,"[""Power BI"", ""Excel"", ""Data Analysis"", ""Java""]",Manufacturing,Pune,True,True
+457,Tanvi Verma,Female,ST,Rural,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""HTML/CSS"", ""Communication""]",Retail / E-commerce,Bengaluru,True,False
+458,Amit Singh,Male,General,Rural,Gurugram,Haryana,B.Tech / B.E.,"[""HTML/CSS"", ""JavaScript"", ""Docker"", ""Communication""]",Finance / Banking,Remote,True,True
+459,Neha Mishra,Female,EWS,Urban,Bokaro,Jharkhand,B.Tech / B.E.,"[""Docker"", ""JavaScript""]",Agriculture,Bokaro,True,True
+460,Kiran Sen,Male,General,Rural,Panipat,Haryana,B.Sc,"[""SQL"", ""HTML/CSS""]",Retail / E-commerce,Bengaluru,True,True
+461,Suresh Sharma,Male,SC,Rural,Gurugram,Haryana,12th Pass,"[""MongoDB"", ""HTML/CSS"", ""Machine Learning"", ""SQL""]",Agriculture,Pune,True,True
+462,Preeti Rao,Female,ST,Urban,Faridabad,Haryana,MBA,"[""SQL"", ""Python"", ""AWS"", ""React"", ""Docker""]",Retail / E-commerce,Mumbai,True,False
+463,Preeti Kumar,Male,General,Urban,Hubli,Karnataka,12th Pass,"[""MongoDB"", ""Node.js"", ""Docker"", ""Java""]",Retail / E-commerce,Mumbai,True,True
+464,Sneha Sinha,Male,OBC,Urban,Panipat,Haryana,B.Sc,"[""Data Analysis"", ""Java"", ""React"", ""JavaScript"", ""C++""]",Government,Bengaluru,True,False
+465,Kiran Singh,Female,General,Rural,Bengaluru Rural,Karnataka,10th Pass,"[""Machine Learning"", ""Java"", ""MongoDB"", ""AWS""]",Manufacturing,Bengaluru Rural,False,True
+466,Vijay Verma,Male,OBC,Rural,Nashik,Maharashtra,B.Sc,"[""C++"", ""Machine Learning"", ""Docker"", ""Git"", ""HTML/CSS""]",Education,Mumbai,True,False
+467,Vikram Sinha,Male,OBC,Rural,Gurugram,Haryana,B.Com,"[""Tableau"", ""FastAPI"", ""SQL"", ""MongoDB""]",Government,Gurugram,True,False
+468,Vikram Pandey,Male,General,Urban,Muzaffarpur,Bihar,BBA / BMS,"[""MongoDB"", ""Tableau"", ""Power BI"", ""Figma"", ""Excel""]",Finance / Banking,Remote,True,False
+469,Vikram Sinha,Female,OBC,Urban,Muzaffarpur,Bihar,10th Pass,"[""Docker"", ""HTML/CSS"", ""FastAPI""]",Logistics / Supply Chain,Pune,True,False
+470,Deepak Kumar,Female,General,Rural,Nagpur,Maharashtra,Diploma,"[""SQL"", ""Figma""]",Logistics / Supply Chain,Pune,True,False
+471,Deepak Patel,Male,OBC,Rural,Faridabad,Haryana,12th Pass,"[""MongoDB"", ""Power BI""]",Logistics / Supply Chain,Mumbai,True,False
+472,Abhishek Pandey,Female,SC,Rural,Hubli,Karnataka,B.Tech / B.E.,"[""Tableau"", ""SQL"", ""C++"", ""React"", ""MongoDB""]",Government,Bengaluru,False,False
+473,Amit Prasad,Female,OBC,Urban,Bengaluru Rural,Karnataka,B.Tech / B.E.,"[""Docker"", ""FastAPI"", ""Figma"", ""React""]",Healthcare,Remote,True,False
+474,Rajesh Pandey,Female,General,Urban,Gurugram,Haryana,MBA,"[""Data Analysis"", ""Machine Learning"", ""Tableau"", ""React""]",Agriculture,Remote,True,False
+475,Tanvi Sharma,Male,General,Rural,Faridabad,Haryana,B.Tech / B.E.,"[""FastAPI"", ""Figma""]",Agriculture,Bengaluru,True,True
+476,Anjali Gupta,Male,OBC,Rural,Faridabad,Haryana,ITI,"[""Java"", ""Node.js""]",Manufacturing,Mumbai,True,False
+477,Manish Joshi,Female,ST,Rural,Hubli,Karnataka,B.Tech / B.E.,"[""AWS"", ""Figma"", ""Node.js"", ""FastAPI"", ""Communication""]",IT / Software,Mumbai,True,False
+478,Yash Sharma,Male,General,Urban,Nashik,Maharashtra,MBA,"[""Machine Learning"", ""Docker""]",Finance / Banking,Mumbai,True,False
+479,Kiran Gupta,Male,EWS,Urban,Panipat,Haryana,MBA,"[""JavaScript"", ""Python"", ""Tableau"", ""Java"", ""Excel""]",IT / Software,Panipat,False,False
+480,Manish Prasad,Male,General,Urban,Faridabad,Haryana,10th Pass,"[""Java"", ""React""]",Government,Faridabad,False,False
+481,Sunita Rao,Male,OBC,Urban,Nagpur,Maharashtra,M.Sc,"[""Communication"", ""Machine Learning"", ""C++"", ""Docker"", ""Data Analysis""]",Media / Entertainment,Remote,True,False
+482,Vikram Tiwari,Female,OBC,Rural,Dhanbad,Jharkhand,ITI,"[""Node.js"", ""Docker"", ""React"", ""Git"", ""Python""]",Media / Entertainment,Dhanbad,True,False
+483,Vijay Joshi,Male,SC,Urban,Ranchi,Jharkhand,B.Tech / B.E.,"[""Tableau"", ""Python"", ""Machine Learning""]",IT / Software,Mumbai,True,False
+484,Rajesh Singh,Female,OBC,Urban,Bengaluru Urban,Karnataka,M.Sc,"[""JavaScript"", ""Communication"", ""Power BI"", ""Data Analysis""]",IT / Software,Bengaluru,False,False
+485,Pooja Reddy,Female,OBC,Rural,Gurugram,Haryana,12th Pass,"[""React"", ""SQL"", ""Communication""]",Logistics / Supply Chain,Bengaluru,False,False
+486,Sunita Patel,Female,General,Urban,Faridabad,Haryana,B.Sc,"[""Python"", ""MongoDB"", ""JavaScript"", ""C++"", ""Git""]",Government,Mumbai,True,False
+487,Tanvi Sen,Female,General,Urban,Khunti,Jharkhand,M.Tech / M.E.,"[""C++"", ""Python"", ""Node.js"", ""Data Analysis"", ""Figma""]",Manufacturing,Remote,False,False
+488,Sanjay Sinha,Male,General,Rural,Mysuru,Karnataka,Diploma,"[""Python"", ""Power BI""]",Government,Mysuru,True,False
+489,Meera Reddy,Male,OBC,Urban,Bokaro,Jharkhand,Diploma,"[""React"", ""Tableau"", ""FastAPI""]",Media / Entertainment,Remote,True,False
+490,Amit Joshi,Male,SC,Rural,Bengaluru Rural,Karnataka,M.Tech / M.E.,"[""JavaScript"", ""Java"", ""MongoDB"", ""React"", ""FastAPI""]",IT / Software,Remote,True,False
+491,Komal Verma,Female,OBC,Urban,Nuh,Haryana,B.Tech / B.E.,"[""MongoDB"", ""FastAPI"", ""C++"", ""Python"", ""Tableau""]",Agriculture,Mumbai,True,True
+492,Rahul Yadav,Female,OBC,Urban,Gurugram,Haryana,B.Tech / B.E.,"[""HTML/CSS"", ""MongoDB"", ""Power BI"", ""Tableau""]",Finance / Banking,Bengaluru,True,True
+493,Vikram Nair,Female,OBC,Urban,Nagpur,Maharashtra,B.Tech / B.E.,"[""SQL"", ""Power BI"", ""Java""]",Logistics / Supply Chain,Mumbai,True,False
+494,Sneha Kumar,Male,SC,Rural,Simdega,Jharkhand,Diploma,"[""Data Analysis"", ""React"", ""C++""]",Healthcare,Pune,True,False
+495,Meera Dubey,Female,General,Rural,Pune,Maharashtra,12th Pass,"[""Power BI"", ""Machine Learning""]",IT / Software,Bengaluru,True,False
+496,Kiran Mehta,Male,SC,Urban,Gaya,Bihar,B.Tech / B.E.,"[""HTML/CSS"", ""Python""]",Manufacturing,Mumbai,True,True
+497,Deepak Mishra,Male,OBC,Urban,Ranchi,Jharkhand,ITI,"[""Excel"", ""Machine Learning"", ""Communication"", ""Figma""]",Retail / E-commerce,Remote,True,True
+498,Divya Reddy,Female,General,Urban,Patna,Bihar,Diploma,"[""Java"", ""Tableau"", ""Machine Learning""]",Retail / E-commerce,Mumbai,True,False
+499,Preeti Sinha,Male,General,Urban,Bengaluru Urban,Karnataka,B.Tech / B.E.,"[""C++"", ""MongoDB"", ""Machine Learning"", ""JavaScript""]",Logistics / Supply Chain,Remote,True,False
+500,Sneha Das,Male,OBC,Rural,Hubli,Karnataka,MBA,"[""Data Analysis"", ""React"", ""Power BI"", ""Git"", ""Excel""]",Agriculture,Pune,True,False
