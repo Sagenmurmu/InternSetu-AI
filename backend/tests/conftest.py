@@ -15,6 +15,7 @@ from app.models.internship_model import Internship
 from app.models.application_model import Application
 from app.models.match_result_model import MatchResult
 from app.models.audit_log_model import AuditLog
+from app.models.policy_weight_model import PolicyWeight
 
 
 @pytest.fixture(scope="function")

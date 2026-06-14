@@ -1,6 +1,12 @@
-"""Scoring modules for Qualifications, Locations, and Sectors matching."""
+"""Scoring modules for Qualifications, Locations, Sectors, and Skills matching."""
 
 from app.ml.model_config import QUALIFICATION_HIERARCHY, SECTOR_GROUPS
+
+
+def calculate_skill_score(candidate_skills, required_skills) -> dict:
+    """Wrapper calling calculate_skill_similarity."""
+    from app.ml.skill_similarity import calculate_skill_similarity
+    return calculate_skill_similarity(candidate_skills, required_skills)
 
 
 def calculate_qualification_score(candidate_qualification: str, required_qualification: str) -> dict:
@@ -78,11 +84,11 @@ def calculate_location_score(candidate, internship) -> dict:
     }
 
 
-def calculate_sector_score(candidate_interest: str, internship_sector: str) -> dict:
+def calculate_sector_score(candidate_sector_interest: str, internship_sector: str) -> dict:
     """
     Calculate sector alignment rating using pre-configured sector transferability maps.
     """
-    cand_sec = (candidate_interest or "").lower().strip()
+    cand_sec = (candidate_sector_interest or "").lower().strip()
     job_sec = (internship_sector or "").lower().strip()
 
     if not job_sec:
@@ -99,10 +105,29 @@ def calculate_sector_score(candidate_interest: str, internship_sector: str) -> d
         if cand_sec in group and job_sec in group:
             return {
                 "score": 70.0,
-                "reason": f"Related/transferable sector match ({candidate_interest} and {internship_sector})"
+                "reason": f"Related/transferable sector match ({candidate_sector_interest} and {internship_sector})"
             }
 
     return {
         "score": 35.0,
-        "reason": f"Different sector interest: {candidate_interest} (Job in {internship_sector})"
+        "reason": f"Different sector interest: {candidate_sector_interest} (Job in {internship_sector})"
     }
+
+
+def calculate_final_score(score_breakdown: dict) -> float:
+    """Calculate final matching score based on configurations weights."""
+    from app.ml.model_config import (
+        SKILL_WEIGHT,
+        QUALIFICATION_WEIGHT,
+        LOCATION_WEIGHT,
+        SECTOR_WEIGHT,
+        FAIRNESS_WEIGHT
+    )
+    final = (
+        score_breakdown.get("skill_score", 0.0) * SKILL_WEIGHT
+        + score_breakdown.get("qualification_score", 0.0) * QUALIFICATION_WEIGHT
+        + score_breakdown.get("location_score", 0.0) * LOCATION_WEIGHT
+        + score_breakdown.get("sector_score", 0.0) * SECTOR_WEIGHT
+        + score_breakdown.get("fairness_score", 0.0) * FAIRNESS_WEIGHT
+    )
+    return round(min(max(final, 0.0), 100.0), 2)

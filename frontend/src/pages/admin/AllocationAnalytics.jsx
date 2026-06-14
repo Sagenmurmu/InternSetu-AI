@@ -3,6 +3,8 @@ import { BarChart3 } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { adminService } from '../../services/adminService';
 import DistrictChart from '../../components/admin/DistrictChart';
+import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 
 export default function AllocationAnalytics() {
   const [districtData, setDistrictData] = useState([]);
@@ -39,14 +41,19 @@ export default function AllocationAnalytics() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <BarChart3 className="w-6 h-6 text-indigo-600" />
-          <h1 className="text-2xl font-bold text-gray-900">Allocation Analytics</h1>
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <BarChart3 className="w-6 h-6 text-indigo-600" />
+            <h1 className="text-2xl font-bold text-gray-900">Allocation Analytics</h1>
+          </div>
+          <p className="text-sm text-gray-500">
+            District, state, and sector-level allocation insights
+          </p>
         </div>
-        <p className="text-sm text-gray-500">
-          District, state, and sector-level allocation insights
-        </p>
+        <Button onClick={() => exportService.exportAdminMatches()} variant="outline" size="sm">
+          Export Match Results
+        </Button>
       </div>
 
       {/* District Chart */}

@@ -222,4 +222,41 @@ export const matchingService = {
 
     return matches.sort((a, b) => b.matchDetails.finalScore - a.matchDetails.finalScore);
   },
+
+  getSkillGap: async (candidateId, internshipId) => {
+    if (isMockFallbackEnabled()) {
+      const candidates = getFromStorage(KEYS.CANDIDATES) || demoCandidates;
+      const internships = getFromStorage(KEYS.INTERNSHIPS) || demoInternships;
+      const cand = candidates.find((c) => c.id === candidateId) || { skills: [] };
+      const intern = internships.find((i) => i.id === internshipId) || { requiredSkills: [] };
+      
+      const req = intern.requiredSkills || [];
+      const has = cand.skills || [];
+      const matched = req.filter(s => has.some(c => c.toLowerCase() === s.toLowerCase()));
+      const missing = req.filter(s => !has.some(c => c.toLowerCase() === s.toLowerCase()));
+      
+      return {
+        candidate_id: candidateId,
+        internship_id: internshipId,
+        matched_skills: matched,
+        missing_skills: missing,
+        match_percentage: req.length ? Math.round((matched.length / req.length) * 100) : 100,
+        priority_skills: missing.slice(0, 1),
+        recommendations: missing.map(s => `Practice ${s} exercises.`)
+      };
+    }
+
+    const response = await api.get(`/matching/candidate/${candidateId}/skill-gaps?internship_id=${internshipId}`);
+    const data = response.data;
+    return data.success ? data.data : data;
+  },
+
+  getMySkillGap: async (internshipId) => {
+    if (isMockFallbackEnabled()) {
+      return matchingService.getSkillGap(1, internshipId);
+    }
+    const response = await api.get(`/matching/skill-gap/${internshipId}`);
+    const data = response.data;
+    return data.success ? data.data : data;
+  },
 };

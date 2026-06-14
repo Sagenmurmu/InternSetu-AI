@@ -5,6 +5,7 @@ from app.core.database import get_db
 from app.core.security import require_roles
 from app.services import analytics_service
 from app.utils.response import success_response
+from app.schemas.admin_schema import PolicyWeightUpdateRequest, PolicyWeightResponse
 
 router = APIRouter(prefix="/admin", tags=["Admin"])
 
@@ -61,4 +62,35 @@ def matching_insights(
 ):
     result = analytics_service.get_matching_insights(db)
     return success_response(result, "Matching insights retrieved")
+
+
+@router.get("/policy-weights")
+def get_policy_weights(
+    db: Session = Depends(get_db),
+    current_user=Depends(require_roles("admin")),
+):
+    from app.services import policy_service
+    result = policy_service.get_current_policy_weights(db)
+    return success_response(PolicyWeightResponse.model_validate(result), "Policy weights retrieved")
+
+
+@router.put("/policy-weights")
+def update_policy_weights(
+    payload: PolicyWeightUpdateRequest,
+    db: Session = Depends(get_db),
+    current_user=Depends(require_roles("admin")),
+):
+    from app.services import policy_service
+    result = policy_service.update_policy_weights(db, payload, current_user)
+    return success_response(PolicyWeightResponse.model_validate(result), "Policy weights updated successfully")
+
+
+@router.post("/policy-weights/reset")
+def reset_policy_weights(
+    db: Session = Depends(get_db),
+    current_user=Depends(require_roles("admin")),
+):
+    from app.services import policy_service
+    result = policy_service.reset_policy_weights(db, current_user)
+    return success_response(PolicyWeightResponse.model_validate(result), "Policy weights reset to default")
 

@@ -1,7 +1,10 @@
-import json
-from app.ml.skill_normalizer import normalize_skill, normalize_skills
-from app.ml.skill_similarity import calculate_skill_score
-from app.ml.scoring_engine import calculate_qualification_score, calculate_location_score, calculate_sector_score
+from app.ml.skill_similarity import normalize_skill, normalize_skills
+from app.ml.scoring_engine import (
+    calculate_skill_score,
+    calculate_qualification_score,
+    calculate_location_score,
+    calculate_sector_score
+)
 from app.ml.fairness_reranker import calculate_fairness_score, apply_fairness_reranking
 from app.ml.explanation_generator import generate_explanation
 from app.ml.eligibility_filter import is_eligible
@@ -165,22 +168,29 @@ def test_location_proximity():
 def test_capacity_full_filter():
     """Verify internships at full capacity are filtered out of recommendations."""
     class DummyCand:
-        pass
-        
+        def __init__(self):
+            self.skills = ["Python"]
+            self.qualification = "B.Tech / B.E."
+            self.state = "Madhya Pradesh"
+            self.district = "Bhopal"
+            self.profile_completion = 100.0
+            self.past_participation = False
+            
     class DummyJob:
         def __init__(self, is_active, capacity, selected_count):
             self.is_active = is_active
             self.capacity = capacity
             self.selected_count = selected_count
+            self.required_qualification = "B.Tech / B.E."
             
     cand = DummyCand()
     job_active = DummyJob(True, 3, 2)
     job_full = DummyJob(True, 3, 3)
     job_inactive = DummyJob(False, 3, 0)
     
-    assert is_eligible(cand, job_active) is True
-    assert is_eligible(cand, job_full) is False
-    assert is_eligible(cand, job_inactive) is False
+    assert is_eligible(cand, job_active)["eligible"] is True
+    assert is_eligible(cand, job_full)["eligible"] is False
+    assert is_eligible(cand, job_inactive)["eligible"] is False
 
 
 def test_fairness_cap():

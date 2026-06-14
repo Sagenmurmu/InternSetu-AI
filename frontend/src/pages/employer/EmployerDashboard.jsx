@@ -5,6 +5,7 @@ import { useAuth } from '../../hooks/useAuth';
 import { employerService } from '../../services/employerService';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 import { formatDate } from '../../utils/helpers';
 
 export default function EmployerDashboard() {
@@ -84,9 +85,14 @@ export default function EmployerDashboard() {
           </h1>
           <p className="text-sm text-gray-500 mt-1">Your hiring activity at a glance</p>
         </div>
-        <Button onClick={() => navigate('/employer/create-internship')} icon={PlusCircle}>
-          Create Internship
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button onClick={() => exportService.exportEmployerSelectedCandidates()} variant="outline">
+            Export Selected
+          </Button>
+          <Button onClick={() => navigate('/employer/create-internship')} icon={PlusCircle}>
+            Create Internship
+          </Button>
+        </div>
       </div>
 
       {/* Stats */}

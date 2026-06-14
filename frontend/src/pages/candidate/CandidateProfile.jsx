@@ -6,6 +6,7 @@ import Input from '../../components/common/Input';
 import Select from '../../components/common/Select';
 import Button from '../../components/common/Button';
 import ProfileCompletionCard from '../../components/candidate/ProfileCompletionCard';
+import ResumeParserBox from '../../components/candidate/ResumeParserBox';
 import { STATES, QUALIFICATIONS, SECTORS, GENDERS, CATEGORIES, RURAL_URBAN, SKILLS } from '../../utils/constants';
 
 export default function CandidateProfile() {
@@ -13,6 +14,7 @@ export default function CandidateProfile() {
   const [formData, setFormData] = useState({});
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [fromParser, setFromParser] = useState(false);
 
   useEffect(() => {
     if (user?.candidateData) {
@@ -39,13 +41,31 @@ export default function CandidateProfile() {
     setSaved(false);
   };
 
+  const handleProfileDataParsed = (parsed) => {
+    setFormData((prev) => {
+      const existingSkills = prev.skills || [];
+      const parsedSkills = parsed.skills || [];
+      const mergedSkills = Array.from(new Set([...existingSkills, ...parsedSkills]));
+
+      return {
+        ...prev,
+        name: parsed.name || prev.name,
+        qualification: parsed.qualification || prev.qualification,
+        skills: mergedSkills,
+      };
+    });
+    setFromParser(true);
+    setSaved(false);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSaving(true);
     try {
-      await candidateService.updateProfile(user.id, formData);
+      await candidateService.updateProfile(user.id, formData, fromParser);
       updateProfile(formData);
       setSaved(true);
+      setFromParser(false);
       setTimeout(() => setSaved(false), 3000);
     } catch (err) {
       alert(err.message);
@@ -64,9 +84,10 @@ export default function CandidateProfile() {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-6">
-        {/* Profile Completion */}
-        <div>
+        {/* Profile Completion & AI Parser */}
+        <div className="space-y-6">
           <ProfileCompletionCard percentage={formData.profileCompletion || 0} />
+          <ResumeParserBox onProfileDataParsed={handleProfileDataParsed} />
         </div>
 
         {/* Form */}

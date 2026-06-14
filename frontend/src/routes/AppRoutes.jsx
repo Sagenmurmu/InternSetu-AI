@@ -32,6 +32,7 @@ import AllocationAnalytics from '../pages/admin/AllocationAnalytics';
 import FairnessDashboard from '../pages/admin/FairnessDashboard';
 import CapacityUtilization from '../pages/admin/CapacityUtilization';
 import AuditLogs from '../pages/admin/AuditLogs';
+import PolicySettings from '../pages/admin/PolicySettings';
 
 export default function AppRoutes() {
   return (
@@ -86,6 +87,7 @@ export default function AppRoutes() {
         <Route path="fairness" element={<FairnessDashboard />} />
         <Route path="capacity" element={<CapacityUtilization />} />
         <Route path="audit-logs" element={<AuditLogs />} />
+        <Route path="policy-settings" element={<PolicySettings />} />
       </Route>
 
       {/* Fallback */}

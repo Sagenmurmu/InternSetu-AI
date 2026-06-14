@@ -99,6 +99,7 @@ export default function RecommendedInternships() {
             key={rec.id}
             internship={rec}
             matchScore={rec.matchDetails?.finalScore}
+            showSkillGap={true}
           />
         ))}
       </div>

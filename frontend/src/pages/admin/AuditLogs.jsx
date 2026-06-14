@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ScrollText, Search, Filter } from 'lucide-react';
 import { adminService } from '../../services/adminService';
+import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 import { AUDIT_ACTIONS } from '../../utils/constants';
 import { formatDateTime } from '../../utils/helpers';
 
@@ -60,14 +62,19 @@ export default function AuditLogs() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <ScrollText className="w-6 h-6 text-indigo-600" />
-          <h1 className="text-2xl font-bold text-gray-900">Audit Logs</h1>
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <ScrollText className="w-6 h-6 text-indigo-600" />
+            <h1 className="text-2xl font-bold text-gray-900">Audit Logs</h1>
+          </div>
+          <p className="text-sm text-gray-500">
+            Complete system activity log for compliance and transparency
+          </p>
         </div>
-        <p className="text-sm text-gray-500">
-          Complete system activity log for compliance and transparency
-        </p>
+        <Button onClick={() => exportService.exportAdminAuditLogs()} variant="outline" size="sm">
+          Export Audit Logs
+        </Button>
       </div>
 
       {/* Filters */}

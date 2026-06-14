@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, UploadFile, File, HTTPException
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
@@ -32,12 +32,51 @@ def get_my_profile(
 @router.put("/me")
 def update_my_profile(
     data: CandidateUpdate,
+    from_parser: bool = False,
     db: Session = Depends(get_db),
     current_user=Depends(require_roles("candidate")),
 ):
     update_data = data.model_dump(exclude_unset=True)
-    result = candidate_service.update_candidate_profile(db, current_user, update_data)
+    result = candidate_service.update_candidate_profile(db, current_user, update_data, from_parser=from_parser)
     return success_response(result, "Profile updated")
+
+
+@router.post("/me/resume/parse")
+def parse_my_resume(
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db),
+    current_user=Depends(require_roles("candidate")),
+):
+    # Enforce size limit: 5MB
+    content = file.file.read()
+    file.file.seek(0)
+    
+    if len(content) > 5 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="File size exceeds maximum limit of 5 MB.")
+        
+    ext = file.filename.split(".")[-1].lower()
+    if ext not in ("pdf", "docx", "txt"):
+        raise HTTPException(status_code=400, detail="Unsupported file format. Only PDF, DOCX, and TXT are allowed.")
+        
+    try:
+        from app.services.resume_parser_service import parse_resume
+        result = parse_resume(content, file.filename)
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to parse resume: {str(e)}")
+        
+    # Write audit log: "Candidate parsed resume"
+    from app.models.audit_log_model import AuditLog
+    audit = AuditLog(
+        user_id=current_user.id,
+        user_role=current_user.role,
+        action="PROFILE_UPDATE",
+        entity_type="candidate",
+        description="Candidate parsed resume"
+    )
+    db.add(audit)
+    db.commit()
+    
+    return success_response(result, "Resume parsed successfully")
 
 
 @router.get("/me/applications")
@@ -99,6 +138,7 @@ def _serialize_match(match):
         "sector_score": match.sector_score,
         "fairness_score": match.fairness_score,
         "final_score": match.final_score,
+        "ranking_score": getattr(match, "ranking_score", match.final_score),
         "explanation": explanation,
         "created_at": match.created_at,
     }

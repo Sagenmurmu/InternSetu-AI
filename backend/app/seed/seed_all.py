@@ -11,6 +11,7 @@ from app.repositories import user_repository
 from app.models.application_model import Application
 from app.models.internship_model import Internship
 from app.models.audit_log_model import AuditLog
+from app.models.policy_weight_model import PolicyWeight
 from app.utils.seed_helper import is_already_seeded
 
 from app.seed.seed_candidates import seed_candidates

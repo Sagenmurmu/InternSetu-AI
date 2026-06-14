@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { MapPin, Clock, Banknote, Users, Sparkles, Building2, ArrowRight } from 'lucide-react';
 import Badge from '../common/Badge';
 import { formatCurrency, getScoreColor, calculateRemainingCapacity } from '../../utils/helpers';
+import SkillGapBox from './SkillGapBox';
 
-export default function InternshipCard({ internship, matchScore, showMatch = true }) {
+export default function InternshipCard({ internship, matchScore, showMatch = true, showSkillGap = false }) {
   const navigate = useNavigate();
   const remaining = calculateRemainingCapacity(internship.capacity, internship.selectedCount);
 
@@ -78,6 +79,12 @@ export default function InternshipCard({ internship, matchScore, showMatch = tru
             <span>{remaining} seat{remaining !== 1 ? 's' : ''} left</span>
           </div>
         </div>
+
+        {showSkillGap && (
+          <div className="mt-4" onClick={(e) => e.stopPropagation()}>
+            <SkillGapBox internshipId={internship.id} userRole="candidate" />
+          </div>
+        )}
       </div>
 
       {/* Footer */}

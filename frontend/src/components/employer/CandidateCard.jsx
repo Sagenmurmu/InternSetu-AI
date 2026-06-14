@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, GraduationCap, Briefcase, Star } from 'lucide-react';
 import { getInitials, getScoreColor, getScoreBgColor } from '../../utils/helpers';
+import SkillGapBox from '../candidate/SkillGapBox';
 
 export default function CandidateCard({ candidate, onClose }) {
   const match = candidate.matchDetails;
@@ -112,6 +113,14 @@ export default function CandidateCard({ candidate, onClose }) {
             ))}
           </ul>
         </div>
+      )}
+
+      {candidate.id && match?.internshipId && (
+        <SkillGapBox
+          internshipId={match.internshipId}
+          candidateId={candidate.id}
+          userRole="employer"
+        />
       )}
     </div>
   );

@@ -1,6 +1,47 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, model_validator
 from typing import Optional, List
 from datetime import datetime
+
+
+class PolicyWeightResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    skill_weight: float
+    qualification_weight: float
+    location_weight: float
+    sector_weight: float
+    fairness_weight: float
+    is_active: bool
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+    updated_by: Optional[int] = None
+
+
+class PolicyWeightUpdateRequest(BaseModel):
+    skill_weight: float
+    qualification_weight: float
+    location_weight: float
+    sector_weight: float
+    fairness_weight: float
+
+    @model_validator(mode="after")
+    def validate_weights(self) -> "PolicyWeightUpdateRequest":
+        weights = [
+            self.skill_weight,
+            self.qualification_weight,
+            self.location_weight,
+            self.sector_weight,
+            self.fairness_weight
+        ]
+        for w in weights:
+            if w < 0.0 or w > 1.0:
+                raise ValueError("Weights must be between 0.0 and 1.0")
+        
+        total = sum(weights)
+        if abs(total - 1.0) > 0.001:
+            raise ValueError(f"Sum of weights must be exactly 1.0 (got {total})")
+        return self
 
 
 class AdminOverviewResponse(BaseModel):

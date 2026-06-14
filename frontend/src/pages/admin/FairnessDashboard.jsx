@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Scale } from 'lucide-react';
 import { adminService } from '../../services/adminService';
 import FairnessScoreCard from '../../components/admin/FairnessScoreCard';
+import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 import CategoryChart from '../../components/admin/CategoryChart';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
@@ -48,14 +50,19 @@ export default function FairnessDashboard() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <Scale className="w-6 h-6 text-indigo-600" />
-          <h1 className="text-2xl font-bold text-gray-900">Fairness Dashboard</h1>
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <Scale className="w-6 h-6 text-indigo-600" />
+            <h1 className="text-2xl font-bold text-gray-900">Fairness Dashboard</h1>
+          </div>
+          <p className="text-sm text-gray-500">
+            Monitor diversity, inclusion, and fairness across all allocations
+          </p>
         </div>
-        <p className="text-sm text-gray-500">
-          Monitor diversity, inclusion, and fairness across all allocations
-        </p>
+        <Button onClick={() => exportService.exportAdminFairness()} variant="outline" size="sm">
+          Export Fairness Report
+        </Button>
       </div>
 
       {/* Main Fairness Score */}

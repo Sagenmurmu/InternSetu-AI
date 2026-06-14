@@ -63,7 +63,7 @@ def get_my_candidate_profile(db: Session, user) -> dict:
     return _serialize_candidate(candidate)
 
 
-def update_candidate_profile(db: Session, user, data: dict) -> dict:
+def update_candidate_profile(db: Session, user, data: dict, from_parser: bool = False) -> dict:
     """Update the current user's candidate profile."""
     candidate = candidate_repository.get_candidate_by_user_id(db, user.id)
     if not candidate:
@@ -75,9 +75,10 @@ def update_candidate_profile(db: Session, user, data: dict) -> dict:
     db.refresh(candidate)
 
     # Audit log
+    description = "Candidate updated profile using resume parser" if from_parser else f"Candidate profile updated by {user.name}"
     audit = AuditLog(user_id=user.id, user_role=user.role, action="PROFILE_UPDATE",
                      entity_type="candidate", entity_id=candidate.id,
-                     description=f"Candidate profile updated by {user.name}")
+                     description=description)
     db.add(audit)
     db.commit()
 

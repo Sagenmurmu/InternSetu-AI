@@ -27,7 +27,7 @@ export const candidateService = {
     }
   },
 
-  updateProfile: async (id, data) => {
+  updateProfile: async (id, data, fromParser = false) => {
     if (isMockFallbackEnabled()) {
       return await candidateService.mockUpdateProfile(id, data);
     }
@@ -40,7 +40,7 @@ export const candidateService = {
     
     if (existingProfile) {
       // Update
-      response = await api.put('/candidates/me', payload);
+      response = await api.put(`/candidates/me?from_parser=${fromParser}`, payload);
     } else {
       // Create
       response = await api.post('/candidates/profile', payload);
@@ -49,6 +49,30 @@ export const candidateService = {
     const resData = response.data;
     const result = resData.success ? resData.data : resData;
     return mapCandidateFromApi(result.candidate || result);
+  },
+
+  parseResume: async (file) => {
+    if (isMockFallbackEnabled()) {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      return {
+        name: "Mock Parsed Name",
+        email: "mock.parsed@example.com",
+        phone: "+91 9876543210",
+        skills: ["React", "SQL", "Excel"],
+        qualification: "B.Tech / B.E.",
+        projects: [],
+        raw_text_preview: "Mock PDF content: John Doe\nEmail: mock.parsed@example.com\nPhone: +91 9876543210\nQualification: B.Tech / B.E.\nSkills: React, SQL, Excel, Python."
+      };
+    }
+    const formData = new FormData();
+    formData.append('file', file);
+    const response = await api.post('/candidates/me/resume/parse', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+    const resData = response.data;
+    return resData.success ? resData.data : resData;
   },
 
   getRecommendations: async (id) => {

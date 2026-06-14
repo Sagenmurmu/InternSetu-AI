@@ -55,9 +55,8 @@ InternSetu AI is a final-year/resume-grade full-stack platform designed to optim
 │   ├── database-schema.md         # Database tables, columns, and ER diagrams
 │   ├── api-documentation.md       # API routers and JSON payload formats
 │   ├── matching-algorithm.md      # AI match scores and demographic fairness bonuses
-│   └── deployment-guide.md        # Development and production setup guides
-│
-└── docker-compose.yml             # Orchestration for multi-container launch
+│   └── system-architecture.md     # Architectural design and flow diagrams
+├── docker-compose.yml             # Orchestration for multi-container launch
 ```
 
 ---
@@ -117,16 +116,12 @@ Run these scripts to generate synthetic datasets and compute recommendation/fair
     backend/.venv/Scripts/python ml-experiments/scripts/generate_synthetic_candidates.py
     backend/.venv/Scripts/python ml-experiments/scripts/generate_synthetic_internships.py
     ```
-*   **Evaluate Matching Model**:
+*   **Evaluate Matching & Fairness**:
     ```bash
     backend/.venv/Scripts/python ml-experiments/scripts/evaluate_matching.py
     ```
-*   **Evaluate Fairness & Representation**:
-    ```bash
-    backend/.venv/Scripts/python ml-experiments/scripts/evaluate_fairness.py
-    ```
 
-Data analysis and model performance reports will be saved under `ml-experiments/datasets/`. Experiment notebooks are located in `ml-experiments/notebooks/`.
+Model performance and fairness reports will be saved under `ml-experiments/datasets/`. Experiment notebooks are located in `ml-experiments/notebooks/`.
 
 ---
 
@@ -137,5 +132,4 @@ For detailed breakdowns of specific features, refer to the guides in the [docs/]
 *   **[Database Schema](file:///c:/Users/VICTUS/OneDrive/Desktop/internsetu-ai/docs/database-schema.md)**: Tables, primary keys, relationships, and ER diagrams.
 *   **[API Reference](file:///c:/Users/VICTUS/OneDrive/Desktop/internsetu-ai/docs/api-documentation.md)**: REST endpoints and JSON example payloads.
 *   **[Matching Engine Details](file:///c:/Users/VICTUS/OneDrive/Desktop/internsetu-ai/docs/matching-algorithm.md)**: Demographic diversity algorithms and weights.
-*   **[Deployment & Migrations Guide](file:///c:/Users/VICTUS/OneDrive/Desktop/internsetu-ai/docs/deployment-guide.md)**: Setup guides and seed credentials.
 

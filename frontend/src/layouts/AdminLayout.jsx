@@ -6,6 +6,7 @@ import {
   Scale,
   Gauge,
   ScrollText,
+  Sliders,
 } from 'lucide-react';
 import Navbar from '../components/common/Navbar';
 import Sidebar from '../components/common/Sidebar';
@@ -16,6 +17,7 @@ const adminNav = [
   { label: 'Fairness Dashboard', path: '/admin/fairness', icon: Scale },
   { label: 'Capacity Utilization', path: '/admin/capacity', icon: Gauge },
   { label: 'Audit Logs', path: '/admin/audit-logs', icon: ScrollText },
+  { label: 'Policy Settings', path: '/admin/policy-settings', icon: Sliders },
 ];
 
 export default function AdminLayout() {

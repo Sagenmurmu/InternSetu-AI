@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Gauge } from 'lucide-react';
 import { adminService } from '../../services/adminService';
+import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 import CapacityChart from '../../components/admin/CapacityChart';
 
 export default function CapacityUtilization() {
@@ -39,14 +41,19 @@ export default function CapacityUtilization() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <Gauge className="w-6 h-6 text-indigo-600" />
-          <h1 className="text-2xl font-bold text-gray-900">Capacity Utilization</h1>
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <Gauge className="w-6 h-6 text-indigo-600" />
+            <h1 className="text-2xl font-bold text-gray-900">Capacity Utilization</h1>
+          </div>
+          <p className="text-sm text-gray-500">
+            Monitor seat allocation and remaining capacity across companies and sectors
+          </p>
         </div>
-        <p className="text-sm text-gray-500">
-          Monitor seat allocation and remaining capacity across companies and sectors
-        </p>
+        <Button onClick={() => exportService.exportAdminCapacity()} variant="outline" size="sm">
+          Export Capacity Report
+        </Button>
       </div>
 
       {/* Summary Cards */}

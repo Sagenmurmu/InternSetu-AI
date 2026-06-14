@@ -3,6 +3,8 @@ import { FileText, Building2 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { candidateService } from '../../services/candidateService';
 import Badge from '../../components/common/Badge';
+import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 import { formatDate, getStatusDotColor } from '../../utils/helpers';
 
 export default function ApplicationStatus() {
@@ -44,11 +46,16 @@ export default function ApplicationStatus() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">My Applications</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Track all your internship applications in one place
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">My Applications</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            Track all your internship applications in one place
+          </p>
+        </div>
+        <Button onClick={() => exportService.exportCandidateApplications()} variant="outline" size="sm">
+          Export Applications History
+        </Button>
       </div>
 
       {/* Status Summary */}

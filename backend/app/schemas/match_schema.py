@@ -44,3 +44,13 @@ class RecommendationResponse(BaseModel):
     required_skills: Optional[List[str]] = []
     match_details: MatchScoreBreakdown
     explanation: Optional[List[str]] = []
+
+
+class SkillGapResponse(BaseModel):
+    candidate_id: int
+    internship_id: int
+    matched_skills: List[str] = []
+    missing_skills: List[str] = []
+    match_percentage: int = 0
+    priority_skills: List[str] = []
+    recommendations: List[str] = []

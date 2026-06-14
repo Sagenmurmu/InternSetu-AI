@@ -5,6 +5,7 @@ import StatsCard from '../../components/admin/StatsCard';
 import DistrictChart from '../../components/admin/DistrictChart';
 import CategoryChart from '../../components/admin/CategoryChart';
 import Button from '../../components/common/Button';
+import { exportService } from '../../services/exportService';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState(null);
@@ -68,18 +69,27 @@ export default function AdminDashboard() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard 🏛️</h1>
           <p className="text-sm text-gray-500 mt-1">System-wide overview and controls</p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           {matchCount !== null && (
-            <span className="text-xs text-green-600 font-medium">
+            <span className="text-xs text-green-600 font-medium mr-2">
               ✓ {matchCount} matches computed
             </span>
           )}
-          <Button onClick={handleRunMatching} disabled={running} icon={Zap} variant="primary">
+          <Button onClick={() => exportService.exportAdminCandidates()} variant="outline" size="sm">
+            Export Candidates
+          </Button>
+          <Button onClick={() => exportService.exportAdminInternships()} variant="outline" size="sm">
+            Export Internships
+          </Button>
+          <Button onClick={() => exportService.exportAdminApplications()} variant="outline" size="sm">
+            Export Applications
+          </Button>
+          <Button onClick={handleRunMatching} disabled={running} icon={Zap} variant="primary" size="sm">
             {running ? 'Running...' : 'Run AI Matching'}
           </Button>
         </div>

@@ -123,3 +123,41 @@ def _serialize(match):
         "created_at": match.created_at,
         "candidate": cand_info,
     }
+
+
+@router.get("/skill-gap/{internship_id}")
+def get_my_skill_gap(
+    internship_id: int,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    from fastapi import HTTPException
+    from app.repositories import candidate_repository
+    from app.services import skill_gap_service
+    
+    if current_user.role != "candidate":
+        raise HTTPException(status_code=403, detail="Only candidates can access this endpoint")
+        
+    candidate = candidate_repository.get_candidate_by_user_id(db, current_user.id)
+    if not candidate:
+        raise HTTPException(status_code=404, detail="Candidate profile not found")
+        
+    result = skill_gap_service.get_skill_gap_for_candidate(db, candidate.id, internship_id)
+    return success_response(result, "Skill gap analysis retrieved")
+
+
+@router.get("/candidate/{candidate_id}/skill-gaps")
+def get_candidate_skill_gaps(
+    candidate_id: int,
+    internship_id: int,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    from fastapi import HTTPException
+    from app.services import skill_gap_service
+    
+    if current_user.role not in ("admin", "employer"):
+        raise HTTPException(status_code=403, detail="Permission denied")
+        
+    result = skill_gap_service.get_skill_gap_for_candidate(db, candidate_id, internship_id)
+    return success_response(result, "Skill gap analysis retrieved")

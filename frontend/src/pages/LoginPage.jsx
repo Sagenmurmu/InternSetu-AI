@@ -158,7 +158,7 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="name@example.com"
               required
-              className="bg-white/5 border-white/10 text-white placeholder-gray-500 focus:border-indigo-500"
+              inputClassName="!bg-white/5 !border-white/10 !text-white placeholder-gray-500 focus:border-indigo-500"
             />
           </div>
           <div>
@@ -169,7 +169,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
               required
-              className="bg-white/5 border-white/10 text-white placeholder-gray-500 focus:border-indigo-500"
+              inputClassName="!bg-white/5 !border-white/10 !text-white placeholder-gray-500 focus:border-indigo-500"
             />
           </div>
 

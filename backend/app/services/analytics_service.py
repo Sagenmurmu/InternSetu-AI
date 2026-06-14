@@ -163,7 +163,7 @@ def get_matching_insights(db: Session) -> dict:
     avg_skill = db.query(func.avg(MatchResult.skill_score)).scalar()
     avg_fairness = db.query(func.avg(MatchResult.fairness_score)).scalar()
     
-    from app.ml.skill_normalizer import normalize_skills
+    from app.ml.skill_similarity import normalize_skills
     import json
     from collections import Counter
     

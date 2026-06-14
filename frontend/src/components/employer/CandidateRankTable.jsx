@@ -2,7 +2,7 @@ import React from 'react';
 import { getScoreColor, getInitials } from '../../utils/helpers';
 import Badge from '../common/Badge';
 
-export default function CandidateRankTable({ candidates = [], onViewCandidate }) {
+export default function CandidateRankTable({ candidates = [], onViewCandidate, internship }) {
   if (candidates.length === 0) {
     return (
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-10 text-center">
@@ -28,6 +28,9 @@ export default function CandidateRankTable({ candidates = [], onViewCandidate })
               </th>
               <th className="text-left py-3 px-5 font-semibold text-gray-500 text-xs uppercase tracking-wider hidden sm:table-cell">
                 Qualification
+              </th>
+              <th className="text-left py-3 px-5 font-semibold text-gray-500 text-xs uppercase tracking-wider hidden lg:table-cell">
+                Skill Fit
               </th>
               <th className="text-center py-3 px-5 font-semibold text-gray-500 text-xs uppercase tracking-wider">
                 Match Score
@@ -75,6 +78,27 @@ export default function CandidateRankTable({ candidates = [], onViewCandidate })
                   </div>
                 </td>
                 <td className="py-3 px-5 text-gray-600 hidden sm:table-cell">{candidate.qualification}</td>
+                <td className="py-3 px-5 hidden lg:table-cell">
+                  {(() => {
+                    const reqSkills = internship?.requiredSkills || [];
+                    const candSkills = candidate.skills || [];
+                    if (reqSkills.length === 0) return <span className="text-xs text-gray-400">—</span>;
+                    const matched = reqSkills.filter(s => candSkills.some(c => c.toLowerCase() === s.toLowerCase()));
+                    const missingCount = reqSkills.length - matched.length;
+                    return (
+                      <div className="flex flex-col gap-0.5">
+                        <span className="text-xs font-semibold text-green-600">
+                          {matched.length}/{reqSkills.length} matched
+                        </span>
+                        {missingCount > 0 && (
+                          <span className="text-[10px] text-amber-600">
+                            {missingCount} missing
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })()}
+                </td>
                 <td className="py-3 px-5 text-center">
                   <span className={`text-lg font-bold ${getScoreColor(candidate.matchDetails?.finalScore)}`}>
                     {candidate.matchDetails?.finalScore || '—'}

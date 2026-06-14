@@ -106,6 +106,7 @@ export default function CandidateShortlist() {
             <CandidateRankTable
               candidates={rankedCandidates}
               onViewCandidate={(candidate) => setSelectedCandidate(candidate)}
+              internship={currentInternship}
             />
           )}
         </div>

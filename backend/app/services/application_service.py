@@ -38,6 +38,16 @@ def apply_to_internship(db: Session, user, internship_id: int) -> dict:
     db.add(audit)
     db.commit()
 
+    # Trigger email notifications
+    try:
+        from app.services.notification_service import notify_application_submitted, notify_employer_new_application
+        notify_application_submitted(db, candidate, internship, internship.company)
+        if internship.company and internship.company.user:
+            notify_employer_new_application(db, internship.company.user, candidate, internship)
+    except Exception as e:
+        from app.utils.logger import logger
+        logger.error(f"Error in sending application submission emails: {e}")
+
     return _serialize_application(application)
 
 
@@ -113,6 +123,14 @@ def update_application_status(db: Session, user, application_id: int, new_status
     )
     db.add(audit)
     db.commit()
+
+    # Trigger application status update email notification
+    try:
+        from app.services.notification_service import notify_application_status_changed
+        notify_application_status_changed(db, application.candidate, internship, new_status)
+    except Exception as e:
+        from app.utils.logger import logger
+        logger.error(f"Error in sending application status update email: {e}")
 
     return _serialize_application(application)
 

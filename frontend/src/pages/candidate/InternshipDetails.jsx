@@ -6,6 +6,7 @@ import { internshipService } from '../../services/internshipService';
 import { matchingService } from '../../services/matchingService';
 import MatchScoreCard from '../../components/candidate/MatchScoreCard';
 import ExplanationBox from '../../components/candidate/ExplanationBox';
+import SkillGapBox from '../../components/candidate/SkillGapBox';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
 import { formatCurrency, calculateRemainingCapacity } from '../../utils/helpers';
@@ -224,6 +225,7 @@ export default function InternshipDetails() {
           {matchDetails?.explanation && (
             <ExplanationBox explanations={matchDetails.explanation} />
           )}
+          <SkillGapBox internshipId={id} userRole="candidate" />
         </div>
       </div>
     </div>

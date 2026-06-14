@@ -15,6 +15,7 @@ from app.models.internship_model import Internship
 from app.models.application_model import Application
 from app.models.match_result_model import MatchResult
 from app.models.audit_log_model import AuditLog
+from app.models.policy_weight_model import PolicyWeight
 
 # Import all routes
 from app.routes.auth_routes import router as auth_router
@@ -24,6 +25,7 @@ from app.routes.internship_routes import router as internship_router
 from app.routes.application_routes import router as application_router
 from app.routes.matching_routes import router as matching_router
 from app.routes.admin_routes import router as admin_router
+from app.routes.export_routes import router as export_router
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -54,6 +56,7 @@ app.include_router(internship_router, prefix="/api/v1")
 app.include_router(application_router, prefix="/api/v1")
 app.include_router(matching_router, prefix="/api/v1")
 app.include_router(admin_router, prefix="/api/v1")
+app.include_router(export_router, prefix="/api/v1")
 
 
 @app.on_event("startup")

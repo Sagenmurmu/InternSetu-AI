@@ -266,4 +266,37 @@ export const adminService = {
 
     return [];
   },
+
+  getPolicyWeights: async () => {
+    if (isMockFallbackEnabled()) {
+      return {
+        skill_weight: 0.35,
+        qualification_weight: 0.20,
+        location_weight: 0.15,
+        sector_weight: 0.15,
+        fairness_weight: 0.15,
+      };
+    }
+    const response = await api.get('/admin/policy-weights');
+    const data = response.data;
+    return data.success ? data.data : data;
+  },
+
+  updatePolicyWeights: async (payload) => {
+    if (isMockFallbackEnabled()) {
+      return { success: true };
+    }
+    const response = await api.put('/admin/policy-weights', payload);
+    const data = response.data;
+    return data.success ? data.data : data;
+  },
+
+  resetPolicyWeights: async () => {
+    if (isMockFallbackEnabled()) {
+      return { success: true };
+    }
+    const response = await api.post('/admin/policy-weights/reset');
+    const data = response.data;
+    return data.success ? data.data : data;
+  },
 };

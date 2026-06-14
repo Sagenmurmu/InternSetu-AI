@@ -9,6 +9,7 @@ export default function Input({
   placeholder = '',
   error,
   className = '',
+  inputClassName = '',
   disabled = false,
   required = false,
 }) {
@@ -29,10 +30,11 @@ export default function Input({
         placeholder={placeholder}
         disabled={disabled}
         className={`
-          w-full px-3.5 py-2.5 rounded-lg border text-sm transition-all duration-200
+          w-full px-3.5 py-2.5 rounded-lg border text-gray-900 text-sm transition-all duration-200
           placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
           disabled:bg-gray-50 disabled:text-gray-500 disabled:cursor-not-allowed
           ${error ? 'border-red-300 bg-red-50' : 'border-gray-300 bg-white'}
+          ${inputClassName}
         `}
       />
       {error && <p className="text-xs text-red-600 mt-0.5">{error}</p>}
