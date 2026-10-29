@@ -81,7 +81,7 @@ export default function CandidateShortlist() {
         <select
           value={selectedInternship}
           onChange={(e) => setSelectedInternship(e.target.value)}
-          className="w-full sm:w-96 px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="w-full sm:w-96 px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white text-gray-900 text-sm [&>option]:bg-white [&>option]:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
         >
           {internships.length === 0 && <option value="">No internships available</option>}
           {internships.map((intern) => (

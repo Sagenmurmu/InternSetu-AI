@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { GraduationCap, User, Building2 } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import Input from '../components/common/Input';
@@ -11,7 +11,16 @@ import { validateEmail, validateRequired, validatePassword } from '../utils/vali
 export default function RegisterPage() {
   const navigate = useNavigate();
   const { register, updateProfile } = useAuth();
-  const [role, setRole] = useState('');
+  const [searchParams] = useSearchParams();
+  const paramRole = searchParams.get('role');
+  const initialRole = (paramRole === ROLES.CANDIDATE || paramRole === ROLES.EMPLOYER) ? paramRole : '';
+  const [role, setRole] = useState(initialRole);
+
+  React.useEffect(() => {
+    if (paramRole === ROLES.CANDIDATE || paramRole === ROLES.EMPLOYER) {
+      setRole(paramRole);
+    }
+  }, [paramRole]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -260,7 +269,7 @@ export default function RegisterPage() {
                         name="gender"
                         value={formData.gender}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                       >
                         <option value="">Select</option>
                         {GENDERS.map((g) => <option key={g} value={g}>{g}</option>)}
@@ -272,7 +281,7 @@ export default function RegisterPage() {
                         name="category"
                         value={formData.category}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                       >
                         <option value="">Select</option>
                         {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
@@ -284,7 +293,7 @@ export default function RegisterPage() {
                         name="ruralOrUrban"
                         value={formData.ruralOrUrban}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                       >
                         <option value="">Select</option>
                         {RURAL_URBAN.map((r) => <option key={r} value={r}>{r}</option>)}
@@ -298,7 +307,7 @@ export default function RegisterPage() {
                         name="state"
                         value={formData.state}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                       >
                         <option value="">Select State</option>
                         {STATES.map((s) => <option key={s} value={s}>{s}</option>)}
@@ -311,7 +320,7 @@ export default function RegisterPage() {
                         name="qualification"
                         value={formData.qualification}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                       >
                         <option value="">Select</option>
                         {QUALIFICATIONS.map((q) => <option key={q} value={q}>{q}</option>)}
@@ -342,7 +351,7 @@ export default function RegisterPage() {
                       name="sector"
                       value={formData.sector}
                       onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                     >
                       <option value="">Select Sector</option>
                       {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
@@ -365,7 +374,7 @@ export default function RegisterPage() {
                       name="state"
                       value={formData.state}
                       onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="w-full px-3.5 py-2.5 rounded-lg border border-white/10 bg-slate-900 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 [&>option]:bg-slate-900 [&>option]:text-white"
                     >
                       <option value="">Select State</option>
                       {STATES.map((s) => <option key={s} value={s}>{s}</option>)}
@@ -384,7 +393,7 @@ export default function RegisterPage() {
 
               <p className="text-center text-gray-400 text-sm">
                 Already have an account?{' '}
-                <Link to="/login" className="text-indigo-400 hover:text-indigo-300 font-medium">
+                <Link to={role ? `/login?role=${role}` : "/login"} className="text-indigo-400 hover:text-indigo-300 font-medium">
                   Sign In
                 </Link>
               </p>

@@ -17,8 +17,12 @@ export default function CandidateProfile() {
   const [fromParser, setFromParser] = useState(false);
 
   useEffect(() => {
-    if (user?.candidateData) {
-      setFormData({ ...user.candidateData });
+    if (user) {
+      setFormData({
+        ...user.candidateData,
+        name: user.candidateData?.name || user?.name || '',
+        email: user.candidateData?.email || user?.email || '',
+      });
     }
   }, [user]);
 
@@ -62,8 +66,10 @@ export default function CandidateProfile() {
     e.preventDefault();
     setSaving(true);
     try {
-      await candidateService.updateProfile(user.id, formData, fromParser);
-      updateProfile(formData);
+      const updated = await candidateService.updateProfile(user.id, formData, fromParser);
+      const merged = { ...formData, ...(updated || {}) };
+      setFormData(merged);
+      updateProfile(merged);
       setSaved(true);
       setFromParser(false);
       setTimeout(() => setSaved(false), 3000);
@@ -86,7 +92,7 @@ export default function CandidateProfile() {
       <div className="grid lg:grid-cols-3 gap-6">
         {/* Profile Completion & AI Parser */}
         <div className="space-y-6">
-          <ProfileCompletionCard percentage={formData.profileCompletion || 0} />
+          <ProfileCompletionCard data={formData} percentage={formData.profileCompletion || 0} />
           <ResumeParserBox onProfileDataParsed={handleProfileDataParsed} />
         </div>
 

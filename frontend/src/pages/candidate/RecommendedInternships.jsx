@@ -69,7 +69,7 @@ export default function RecommendedInternships() {
             placeholder="Search by title, company, or skill..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+            className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 bg-white text-gray-900 text-sm [&>option]:bg-white [&>option]:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
           />
         </div>
         <div className="flex items-center gap-2">
@@ -77,7 +77,7 @@ export default function RecommendedInternships() {
           <select
             value={sectorFilter}
             onChange={(e) => setSectorFilter(e.target.value)}
-            className="px-3 py-2.5 rounded-lg border border-gray-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="px-3 py-2.5 rounded-lg border border-gray-300 bg-white text-gray-900 text-sm [&>option]:bg-white [&>option]:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           >
             <option value="">All Sectors</option>
             {SECTORS.map((s) => (

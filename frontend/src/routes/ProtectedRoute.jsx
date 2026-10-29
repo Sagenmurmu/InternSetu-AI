@@ -12,9 +12,10 @@ export default function ProtectedRoute({ allowedRole, children }) {
     return <Loader message="Checking authentication..." />;
   }
 
-  // Not logged in
+  // Not logged in — redirect to the specific space's login if allowedRole is known
   if (!user) {
-    return <Navigate to="/login" replace />;
+    const loginTarget = allowedRole ? `/login?role=${allowedRole}` : '/login';
+    return <Navigate to={loginTarget} replace />;
   }
 
   // Role mismatch — redirect to correct dashboard

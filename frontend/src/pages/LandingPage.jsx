@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GraduationCap, ArrowRight, Sparkles, Building2, ShieldAlert, BarChart3, Users, HelpCircle } from 'lucide-react';
+import { GraduationCap, ArrowRight, Sparkles, Building2, ShieldAlert, BarChart3, Users } from 'lucide-react';
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -58,7 +58,7 @@ export default function LandingPage() {
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-16">
           {/* Candidate Card */}
           <div 
-            onClick={() => navigate('/login')}
+            onClick={() => navigate('/login?role=candidate')}
             className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:bg-white/10 hover:border-indigo-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden shadow-2xl"
           >
             <div className="absolute -right-6 -top-6 w-24 h-24 bg-indigo-600/10 rounded-full blur-xl group-hover:bg-indigo-600/20 transition-all" />
@@ -77,8 +77,8 @@ export default function LandingPage() {
 
           {/* Employer Card */}
           <div 
-            onClick={() => navigate('/login')}
-            className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:bg-white/10 hover:border-indigo-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden shadow-2xl"
+            onClick={() => navigate('/login?role=employer')}
+            className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:bg-white/10 hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden shadow-2xl"
           >
             <div className="absolute -right-6 -top-6 w-24 h-24 bg-purple-600/10 rounded-full blur-xl group-hover:bg-purple-600/20 transition-all" />
             <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center border border-purple-500/20 group-hover:scale-110 transition-transform">
@@ -96,8 +96,8 @@ export default function LandingPage() {
 
           {/* Admin Card */}
           <div 
-            onClick={() => navigate('/login')}
-            className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:bg-white/10 hover:border-indigo-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden shadow-2xl"
+            onClick={() => navigate('/login?role=admin')}
+            className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 text-left hover:bg-white/10 hover:border-rose-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden shadow-2xl"
           >
             <div className="absolute -right-6 -top-6 w-24 h-24 bg-rose-600/10 rounded-full blur-xl group-hover:bg-rose-600/20 transition-all" />
             <div className="w-12 h-12 bg-rose-500/10 rounded-xl flex items-center justify-center border border-rose-500/20 group-hover:scale-110 transition-transform">

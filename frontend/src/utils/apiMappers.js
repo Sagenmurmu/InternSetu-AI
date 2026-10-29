@@ -29,13 +29,15 @@ export const mapCandidateFromApi = (apiCand) => {
   return {
     id: apiCand.id,
     userId: apiCand.user_id,
-    age: apiCand.age || 21,
-    gender: apiCand.gender || 'Female',
-    category: apiCand.category || 'General',
-    ruralOrUrban: apiCand.rural_or_urban || 'Urban',
+    name: apiCand.name || '',
+    email: apiCand.email || '',
+    age: apiCand.age !== undefined && apiCand.age !== null ? apiCand.age : '',
+    gender: apiCand.gender || '',
+    category: apiCand.category || '',
+    ruralOrUrban: apiCand.rural_or_urban || '',
     district: apiCand.district || '',
     state: apiCand.state || '',
-    qualification: apiCand.qualification || 'B.Tech / B.E.',
+    qualification: apiCand.qualification || '',
     course: apiCand.course || '',
     college: apiCand.college || '',
     skills: safeParseJson(apiCand.skills, []),
@@ -52,6 +54,7 @@ export const mapCandidateFromApi = (apiCand) => {
 export const mapCandidateToApi = (feCand) => {
   if (!feCand) return null;
   return {
+    name: feCand.name ? feCand.name.trim() : null,
     age: feCand.age ? Number(feCand.age) : null,
     gender: feCand.gender,
     category: feCand.category,

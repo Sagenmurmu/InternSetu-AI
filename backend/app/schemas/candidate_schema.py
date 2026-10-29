@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 class CandidateCreate(BaseModel):
+    name: Optional[str] = None
     age: Optional[int] = None
     gender: Optional[str] = None
     category: Optional[str] = None
@@ -21,6 +22,7 @@ class CandidateCreate(BaseModel):
 
 
 class CandidateUpdate(BaseModel):
+    name: Optional[str] = None
     age: Optional[int] = None
     gender: Optional[str] = None
     category: Optional[str] = None
@@ -42,6 +44,8 @@ class CandidateResponse(BaseModel):
 
     id: int
     user_id: int
+    name: Optional[str] = None
+    email: Optional[str] = None
     age: Optional[int] = None
     gender: Optional[str] = None
     category: Optional[str] = None

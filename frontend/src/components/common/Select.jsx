@@ -30,7 +30,7 @@ export default function Select({
           w-full px-3.5 py-2.5 rounded-lg border text-sm transition-all duration-200
           focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
           disabled:bg-gray-50 disabled:text-gray-500 disabled:cursor-not-allowed
-          ${error ? 'border-red-300 bg-red-50' : 'border-gray-300 bg-white'}
+          ${error ? 'border-red-300 bg-red-50 text-gray-900' : 'border-gray-300 bg-white text-gray-900'} [&>option]:bg-white [&>option]:text-gray-900
         `}
       >
         <option value="">{placeholder}</option>

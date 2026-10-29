@@ -10,11 +10,13 @@ export const authService = {
     if (!user) return null;
     const normalized = { ...user };
     if (user.role === 'candidate') {
-      if (user.candidate) {
-        normalized.candidateData = mapCandidateFromApi(user.candidate);
-      } else if (user.candidateData) {
-        normalized.candidateData = mapCandidateFromApi(user.candidateData);
-      }
+      const candidateRaw = user.candidate || user.candidateData || {};
+      const mapped = mapCandidateFromApi(candidateRaw) || {};
+      normalized.candidateData = {
+        ...mapped,
+        name: mapped.name || user.name || '',
+        email: mapped.email || user.email || '',
+      };
     } else if (user.role === 'employer') {
       if (user.company) {
         normalized.companyData = mapCompanyFromApi(user.company);
