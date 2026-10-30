@@ -1,7 +1,6 @@
 import re
 from typing import List
 from io import BytesIO
-import fitz  # PyMuPDF
 import docx  # python-docx
 
 from app.core.constants import SKILLS, QUALIFICATIONS
@@ -9,6 +8,7 @@ from app.core.constants import SKILLS, QUALIFICATIONS
 
 def extract_text_from_pdf(file_bytes: bytes) -> str:
     """Extract raw text from PDF bytes using PyMuPDF."""
+    import fitz  # PyMuPDF lazy loaded
     doc = fitz.open(stream=file_bytes, filetype="pdf")
     text = ""
     for page in doc:
