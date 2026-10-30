@@ -17,10 +17,23 @@ export const isMockFallbackEnabled = () => {
   return import.meta.env.VITE_USE_MOCK_FALLBACK === 'true';
 };
 
-// Resolve backend API URL (supports both 'https://domain.com' and 'https://domain.com/api/v1')
+// Resolve backend API URL (supports VITE_API_URL, VITE_API_KEY, VITE_BACKEND_URL, etc.)
 const resolveApiBaseUrl = () => {
-  const envUrl = (import.meta.env.VITE_API_URL || '').trim().replace(/\/+$/, '');
+  let envUrl = (
+    import.meta.env.VITE_API_URL ||
+    import.meta.env.VITE_BACKEND_URL ||
+    import.meta.env.VITE_API_KEY ||
+    import.meta.env.VITE_API_ENDPOINT ||
+    ''
+  ).trim().replace(/\/+$/, '');
+
   if (!envUrl) return 'http://localhost:8000/api/v1';
+
+  // Automatically prepend https:// if protocol was omitted
+  if (!envUrl.startsWith('http://') && !envUrl.startsWith('https://')) {
+    envUrl = `https://${envUrl}`;
+  }
+
   return envUrl.endsWith('/api/v1') ? envUrl : `${envUrl}/api/v1`;
 };
 
