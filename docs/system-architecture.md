@@ -6,20 +6,19 @@ InternSetu AI is an AI-based smart internship allocation platform featuring role
 
 ## 1. Architectural Overview
 
-The system follows a classic **3-Tier Client-Server Architecture** containerized with Docker:
+The system follows a classic **3-Tier Client-Server Architecture** designed for modern cloud platforms (Vercel + Render):
 
-1. **Frontend Presentation Layer**: Built with React 18, Vite, and Tailwind CSS.
-2. **Backend Application Layer**: FastAPI (Python 3.11) exposing REST APIs, holding business logic, auth handling, and the AI matching service.
-3. **Database & Storage Layer**: PostgreSQL in production (SQLite for local testing/dev) driven by SQLAlchemy ORM and managed via Alembic migrations.
+1. **Frontend Presentation Layer**: Built with React 18, Vite, and Tailwind CSS, hosted on **Vercel** with global CDN edge delivery and client-side SPA routing.
+2. **Backend Application Layer**: FastAPI (Python 3.12) exposing REST APIs, holding business logic, auth handling, and the AI matching service, hosted as a web service on **Render**.
+3. **Database & Storage Layer**: Managed PostgreSQL on **Render** (SQLite for local testing/dev) driven by SQLAlchemy ORM and managed via Alembic migrations.
 
 ```mermaid
 graph TD
-    User([Browser Client]) -->|HTTP / WebSockets| Nginx[Nginx Reverse Proxy / Port 5173]
-    Nginx -->|Static Assets| Frontend[React SPA Container]
-    Nginx -->|Proxy /api/v1| Backend[FastAPI Backend Container / Port 8000]
-    Backend -->|SQLAlchemy| Database[(PostgreSQL Database / Port 5432)]
-    Backend -->|JSON Arrays| AIMatching[AI Matching Engine]
-    Backend -->|Logs| Audit[Audit Logger]
+    User([Browser Client]) -->|HTTPS| Vercel[Vercel CDN Edge / React SPA]
+    Vercel -->|REST API /api/v1| Render[Render Web Service / FastAPI Port 8000]
+    Render -->|SQLAlchemy| Database[(Render Managed PostgreSQL Database)]
+    Render -->|JSON Arrays| AIMatching[AI Matching Engine]
+    Render -->|Logs| Audit[Audit Logger]
 ```
 
 ---
@@ -56,9 +55,9 @@ Tracks critical platform events (e.g., matching runs, registrations, application
 
 | Layer | Technology | Details |
 | :--- | :--- | :--- |
-| **Frontend UI** | React 18 (Vite) | Component architecture, Tailwind CSS styling, Axios API Client, Lucide icons, Recharts visualization. |
-| **Backend API** | FastAPI (Python 3.11) | High performance, automatic OpenAPI schema generation, Pydantic data verification. |
+| **Frontend UI** | React 18 (Vite) | Component architecture, Tailwind CSS styling, Axios API Client, Lucide icons, Recharts visualization. Hosted on Vercel. |
+| **Backend API** | FastAPI (Python 3.12) | High performance ASGI web server, automatic OpenAPI schema generation, Pydantic data verification. Hosted on Render. |
 | **Database ORM** | SQLAlchemy | Unified database abstraction allowing PostgreSQL and SQLite interoperability. |
 | **Database Migrations**| Alembic | Incremental versioning of database tables. |
-| **Production Server** | Uvicorn + Nginx | High-performance ASGI server behind a robust reverse proxy. |
-| **Orchestration** | Docker Compose | Multi-container coordination mapping ports, environment variables, and persistence volumes. |
+| **Production Server** | Uvicorn | High-performance ASGI server on Render. |
+| **Deployment Specification** | Vercel JSON + Render Blueprint | Zero-Docker infrastructure as code (`vercel.json`, `render.yaml`). |

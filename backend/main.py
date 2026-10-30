@@ -1,3 +1,4 @@
+import os
 import uvicorn
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -35,14 +36,22 @@ app = FastAPI(
 
 # CORS configuration
 origins = [
-    settings.FRONTEND_URL,
+    settings.FRONTEND_URL.rstrip("/"),
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
 
+extra_cors = os.getenv("CORS_ORIGINS", "")
+if extra_cors:
+    for o in extra_cors.split(","):
+        clean_o = o.strip().rstrip("/")
+        if clean_o and clean_o not in origins:
+            origins.append(clean_o)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -98,4 +107,5 @@ def health_check(db: Session = Depends(get_db)):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)

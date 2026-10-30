@@ -17,9 +17,16 @@ export const isMockFallbackEnabled = () => {
   return import.meta.env.VITE_USE_MOCK_FALLBACK === 'true';
 };
 
+// Resolve backend API URL (supports both 'https://domain.com' and 'https://domain.com/api/v1')
+const resolveApiBaseUrl = () => {
+  const envUrl = (import.meta.env.VITE_API_URL || '').trim().replace(/\/+$/, '');
+  if (!envUrl) return 'http://localhost:8000/api/v1';
+  return envUrl.endsWith('/api/v1') ? envUrl : `${envUrl}/api/v1`;
+};
+
 // Setup Axios API client
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1',
+  baseURL: resolveApiBaseUrl(),
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',
@@ -58,35 +65,38 @@ api.interceptors.response.use(
   }
 );
 
-// Retrieve backend error message
-export const getApiErrorMessage = (error) => {
-  if (error.response && error.response.data) {
-    const data = error.response.data;
-    if (typeof data.detail === 'string') {
-      return data.detail;
-    }
-    if (typeof data.message === 'string') {
-      return data.message;
-    }
-  }
-  return error.message || 'An unexpected error occurred.';
-};
-
-// Generic LocalStorage fallbacks (kept to avoid breaking code that uses them)
+// Helper to get from local storage safely
 export const getFromStorage = (key) => {
-  const data = localStorage.getItem(key);
-  return data ? JSON.parse(data) : null;
+  try {
+    const item = localStorage.getItem(key);
+    return item ? JSON.parse(item) : null;
+  } catch (error) {
+    console.error(`Error reading ${key} from localStorage:`, error);
+    return null;
+  }
 };
 
+// Helper to save to local storage safely
 export const saveToStorage = (key, data) => {
-  localStorage.setItem(key, JSON.stringify(data));
+  try {
+    localStorage.setItem(key, JSON.stringify(data));
+    return true;
+  } catch (error) {
+    console.error(`Error saving ${key} to localStorage:`, error);
+    return false;
+  }
 };
 
-// Audit Log Mock fallback (for manual triggers when offline)
+// Helper to get audit logs
+export const getAuditLogs = () => {
+  return getFromStorage(KEYS.AUDIT_LOGS) || [];
+};
+
+// Helper to append an audit log entry (fallback for mocks)
 export const addAuditLog = (action, userRole, description) => {
-  const logs = getFromStorage(KEYS.AUDIT_LOGS) || [];
+  const logs = getAuditLogs();
   const newLog = {
-    id: `LOG${Date.now().toString(36).toUpperCase()}`,
+    id: `LOG${String(logs.length + 1).padStart(3, '0')}`,
     action,
     userRole,
     description,
@@ -97,6 +107,19 @@ export const addAuditLog = (action, userRole, description) => {
   return newLog;
 };
 
+// Generic error extractor for Axios responses
+export const getApiErrorMessage = (error) => {
+  if (error.response && error.response.data) {
+    const data = error.response.data;
+    if (typeof data.detail === 'string') return data.detail;
+    if (Array.isArray(data.detail)) {
+      return data.detail.map((err) => `${err.loc?.join('.') || ''}: ${err.msg}`).join(', ');
+    }
+    if (data.message) return data.message;
+  }
+  return error.message || 'An unexpected error occurred. Please try again.';
+};
+
 import {
   demoCandidates,
   demoCompanies,
@@ -104,7 +127,7 @@ import {
   demoApplications,
   demoMatchResults,
   demoAdminAnalytics,
-  demoAuditLogs
+  demoAuditLogs,
 } from '../data/demoData';
 
 export const initializeData = () => {
