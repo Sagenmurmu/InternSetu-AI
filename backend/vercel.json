@@ -1,0 +1,9 @@
+{
+  "buildCommand": "python --version",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.py"
+    }
+  ]
+}

@@ -11,7 +11,8 @@ class Settings:
     PROJECT_VERSION: str = "1.0.0"
     PROJECT_DESCRIPTION: str = "AI-Based Smart Internship Allocation Platform"
 
-    raw_db_url: str = os.getenv("DATABASE_URL", "sqlite:///./internsetu.db")
+    default_db: str = "sqlite:////tmp/internsetu.db" if os.getenv("VERCEL") else "sqlite:///./internsetu.db"
+    raw_db_url: str = os.getenv("DATABASE_URL", default_db)
     if raw_db_url.startswith("postgres://"):
         raw_db_url = raw_db_url.replace("postgres://", "postgresql://", 1)
     DATABASE_URL: str = raw_db_url
