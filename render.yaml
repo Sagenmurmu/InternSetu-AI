@@ -24,9 +24,9 @@ services:
           name: internsetu-db
           property: connectionString
       - key: FRONTEND_URL
-        value: http://localhost:5173
+        value: https://intern-setu-ai-annw.vercel.app
       - key: CORS_ORIGINS
-        value: http://localhost:5173
+        value: https://intern-setu-ai-annw.vercel.app,http://localhost:5173
 
 databases:
   # Free PostgreSQL Database on Render

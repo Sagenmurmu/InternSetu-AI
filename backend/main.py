@@ -37,6 +37,7 @@ app = FastAPI(
 # CORS configuration
 origins = [
     settings.FRONTEND_URL.rstrip("/"),
+    "https://intern-setu-ai-annw.vercel.app",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
